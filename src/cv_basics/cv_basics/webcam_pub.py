@@ -1,6 +1,7 @@
-# Basic ROS 2 program to publish real-time streaming 
-# video from your built-in webcam
-# Import the necessary libraries
+''' Basic ROS 2 program to publish real-time streaming 
+    video from your built-in stereo camera on RC car
+    Import the necessary libraries
+'''
 import rclpy # Python Client Library for ROS 2
 from rclpy.node import Node # Handles the creation of nodes
 from sensor_msgs.msg import Image # Image is the message type
@@ -17,51 +18,46 @@ class ImagePublisher(Node):
     Class constructor to set up the node
     """
     # Initiate the Node class's constructor and give it a name
-    super().__init__('image_publisher')
+    super().__init__('image_publisher_1')
       
     # Create the publisher. This publisher will publish an Image
     # to the video_frames topic. The queue size is 10 messages.
-    self.publisher_ = self.create_publisher(Image, 'video_frames', 10)
+    self.publisher_ = self.create_publisher(Image, 'video_frames', 1)
       
-    # We will publish a message every 0.1 seconds
-    timer_period = 0.1  # seconds
+    # We will publish a message every 0.01 seconds
+    timer_period = 0.01  # seconds
       
     # Create the timer
     self.timer = self.create_timer(timer_period, self.timer_callback)
          
     # Create a VideoCapture object
-    # The argument '0' gets the default webcam.
-    self.cap = cv2.VideoCapture(0)
-         
+    # The argument 2 beacuse stereo camera as different modes 
+    # and we only needs to take out camera frames
+    self.cap = cv2.VideoCapture(2)
+
     # Used to convert between ROS and OpenCV images
     self.br = CvBridge()
    
   def timer_callback(self):
     """
     Callback function.
-    This function gets called every 0.1 seconds.
+    This function gets called every 0.01 seconds.
     """
     # Capture frame-by-frame
     # This method returns True/False as well
     # as the video frame.
     ret, frame = self.cap.read()
-    #model_path = '/home/eit-lab/ros2_karan_ws/yolov5/best.pt'
-    #model = torch.hub.load('/home/eit-lab/ros2_karan_ws/yolov5', 'custom', path=model_path, source='local')
-    #new_frame = model(frame)
-    #new_frame.pandas().xyxy[0]
-    #new_frame.show()
+    frame = cv2.resize(frame,(640,640))
     #cv2.imshow("camera", frame)
     #cv2.waitKey(1)
+
+
           
     if ret == True:
       # Publish the image.
       # The 'cv2_to_imgmsg' method converts an OpenCV
       # image to a ROS 2 image message
       self.publisher_.publish(self.br.cv2_to_imgmsg(frame))
- 
-    # Display the message on the console
-    #self.get_logger().info('Publishing video frame')
-
   
 def main(args=None):
   

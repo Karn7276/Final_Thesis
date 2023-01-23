@@ -1,0 +1,440 @@
+[3.787s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[3.788s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f81a05550>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=True, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f81a05550>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f8194ee80>)
+[4.053s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.054s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.054s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.054s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.054s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.056s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.056s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/tmp/.X11-unix/ROS2_final_Thesis'
+[4.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.058s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.059s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.059s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.059s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.060s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.060s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.060s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.061s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.279s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.281s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ignore', 'ignore_ament_install']
+[4.281s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore'
+[4.282s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ignore_ament_install'
+[4.282s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_pkg']
+[4.282s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_pkg'
+[4.283s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['colcon_meta']
+[4.283s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'colcon_meta'
+[4.283s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['ros']
+[4.283s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'ros'
+[4.284s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['cmake', 'python']
+[4.284s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'cmake'
+[4.284s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python'
+[4.285s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extensions ['python_setup_py']
+[4.285s] Level 1:colcon.colcon_core.package_identification:_identify(__pycache__) by extension 'python_setup_py'
+[4.285s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.286s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.286s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.288s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.289s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.289s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.290s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.290s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.291s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.295s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extensions ['ignore', 'ignore_ament_install']
+[4.296s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'ignore'
+[4.297s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'ignore_ament_install'
+[4.297s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extensions ['colcon_pkg']
+[4.298s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'colcon_pkg'
+[4.298s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extensions ['colcon_meta']
+[4.299s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'colcon_meta'
+[4.299s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extensions ['ros']
+[4.299s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'ros'
+[4.300s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extensions ['cmake', 'python']
+[4.300s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'cmake'
+[4.301s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'python'
+[4.301s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extensions ['python_setup_py']
+[4.301s] Level 1:colcon.colcon_core.package_identification:_identify(output) by extension 'python_setup_py'
+[4.304s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[4.305s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[4.305s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[4.306s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[4.306s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[4.306s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[4.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[4.307s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[4.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[4.308s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[4.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[4.309s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[4.310s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[4.310s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[4.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS) by extensions ['ignore', 'ignore_ament_install']
+[4.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS) by extension 'ignore'
+[4.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS) by extension 'ignore_ament_install'
+[4.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS) by extensions ['colcon_pkg']
+[4.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS) by extension 'colcon_pkg'
+[4.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS) by extensions ['colcon_meta']
+[4.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS) by extension 'colcon_meta'
+[4.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS) by extensions ['ros']
+[4.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS) by extension 'ros'
+[4.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS) by extensions ['cmake', 'python']
+[4.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS) by extension 'cmake'
+[4.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS) by extension 'python'
+[4.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS) by extensions ['python_setup_py']
+[4.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS) by extension 'python_setup_py'
+[4.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS/yolov5_ros) by extensions ['ignore', 'ignore_ament_install']
+[4.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS/yolov5_ros) by extension 'ignore'
+[4.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS/yolov5_ros) by extension 'ignore_ament_install'
+[4.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS/yolov5_ros) by extensions ['colcon_pkg']
+[4.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS/yolov5_ros) by extension 'colcon_pkg'
+[4.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS/yolov5_ros) by extensions ['colcon_meta']
+[4.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS/yolov5_ros) by extension 'colcon_meta'
+[4.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS/yolov5_ros) by extensions ['ros']
+[4.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/YOLOv5-ROS/yolov5_ros) by extension 'ros'
+[4.338s] DEBUG:colcon.colcon_core.package_identification:Package 'src/YOLOv5-ROS/yolov5_ros' with type 'ros.ament_python' and name 'yolov5_ros'
+[4.343s] Level 1:colcon.colcon_core.package_identification:_identify(src/bbox_ex_msgs) by extensions ['ignore', 'ignore_ament_install']
+[4.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/bbox_ex_msgs) by extension 'ignore'
+[4.344s] Level 1:colcon.colcon_core.package_identification:_identify(src/bbox_ex_msgs) by extension 'ignore_ament_install'
+[4.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/bbox_ex_msgs) by extensions ['colcon_pkg']
+[4.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/bbox_ex_msgs) by extension 'colcon_pkg'
+[4.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/bbox_ex_msgs) by extensions ['colcon_meta']
+[4.345s] Level 1:colcon.colcon_core.package_identification:_identify(src/bbox_ex_msgs) by extension 'colcon_meta'
+[4.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/bbox_ex_msgs) by extensions ['ros']
+[4.346s] Level 1:colcon.colcon_core.package_identification:_identify(src/bbox_ex_msgs) by extension 'ros'
+[4.350s] DEBUG:colcon.colcon_core.package_identification:Package 'src/bbox_ex_msgs' with type 'ros.ament_cmake' and name 'bboxes_ex_msgs'
+[4.351s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_basics) by extensions ['ignore', 'ignore_ament_install']
+[4.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_basics) by extension 'ignore'
+[4.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_basics) by extension 'ignore_ament_install'
+[4.352s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_basics) by extensions ['colcon_pkg']
+[4.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_basics) by extension 'colcon_pkg'
+[4.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_basics) by extensions ['colcon_meta']
+[4.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_basics) by extension 'colcon_meta'
+[4.353s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_basics) by extensions ['ros']
+[4.354s] Level 1:colcon.colcon_core.package_identification:_identify(src/cv_basics) by extension 'ros'
+[4.362s] DEBUG:colcon.colcon_core.package_identification:Package 'src/cv_basics' with type 'ros.ament_python' and name 'cv_basics'
+[4.363s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[4.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'ignore'
+[4.364s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'ignore_ament_install'
+[4.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['colcon_pkg']
+[4.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'colcon_pkg'
+[4.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['colcon_meta']
+[4.365s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'colcon_meta'
+[4.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extensions ['ros']
+[4.366s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros2) by extension 'ros'
+[4.370s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rplidar_ros2' with type 'ros.ament_cmake' and name 'rplidar_ros'
+[4.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[4.371s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore'
+[4.372s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore_ament_install'
+[4.372s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_pkg']
+[4.372s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_pkg'
+[4.373s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_meta']
+[4.373s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_meta'
+[4.373s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ros']
+[4.373s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ros'
+[4.378s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[4.378s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.379s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.380s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.677s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'cmake_args' from command line to 'None'
+[4.677s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'cmake_target' from command line to 'None'
+[4.678s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.678s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[4.678s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[4.678s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[4.678s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[4.678s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[4.679s] Level 5:colcon.colcon_core.verb:set package 'bboxes_ex_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.679s] DEBUG:colcon.colcon_core.verb:Building package 'bboxes_ex_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/tmp/.X11-unix/ROS2_final_Thesis/build/bboxes_ex_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs', 'merge_install': False, 'path': '/tmp/.X11-unix/ROS2_final_Thesis/src/bbox_ex_msgs', 'symlink_install': True, 'test_result_base': None}
+[4.698s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_args' from command line to 'None'
+[4.698s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target' from command line to 'None'
+[4.698s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.699s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[4.699s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_clean_first' from command line to 'False'
+[4.699s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'cmake_force_configure' from command line to 'False'
+[4.699s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'ament_cmake_args' from command line to 'None'
+[4.699s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[4.699s] Level 5:colcon.colcon_core.verb:set package 'rplidar_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.700s] DEBUG:colcon.colcon_core.verb:Building package 'rplidar_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/tmp/.X11-unix/ROS2_final_Thesis/build/rplidar_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros', 'merge_install': False, 'path': '/tmp/.X11-unix/ROS2_final_Thesis/src/rplidar_ros2', 'symlink_install': True, 'test_result_base': None}
+[4.720s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_args' from command line to 'None'
+[4.720s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target' from command line to 'None'
+[4.721s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.721s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[4.721s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[4.721s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[4.721s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[4.722s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[4.722s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.722s] DEBUG:colcon.colcon_core.verb:Building package 'sllidar_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2', 'merge_install': False, 'path': '/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2', 'symlink_install': True, 'test_result_base': None}
+[4.746s] Level 5:colcon.colcon_core.verb:set package 'cv_basics' build argument 'cmake_args' from command line to 'None'
+[4.746s] Level 5:colcon.colcon_core.verb:set package 'cv_basics' build argument 'cmake_target' from command line to 'None'
+[4.746s] Level 5:colcon.colcon_core.verb:set package 'cv_basics' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.747s] Level 5:colcon.colcon_core.verb:set package 'cv_basics' build argument 'cmake_clean_cache' from command line to 'False'
+[4.747s] Level 5:colcon.colcon_core.verb:set package 'cv_basics' build argument 'cmake_clean_first' from command line to 'False'
+[4.747s] Level 5:colcon.colcon_core.verb:set package 'cv_basics' build argument 'cmake_force_configure' from command line to 'False'
+[4.748s] Level 5:colcon.colcon_core.verb:set package 'cv_basics' build argument 'ament_cmake_args' from command line to 'None'
+[4.748s] Level 5:colcon.colcon_core.verb:set package 'cv_basics' build argument 'catkin_cmake_args' from command line to 'None'
+[4.748s] Level 5:colcon.colcon_core.verb:set package 'cv_basics' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.748s] DEBUG:colcon.colcon_core.verb:Building package 'cv_basics' with the following arguments: {'ament_cmake_args': None, 'build_base': '/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics', 'merge_install': False, 'path': '/tmp/.X11-unix/ROS2_final_Thesis/src/cv_basics', 'symlink_install': True, 'test_result_base': None}
+[4.767s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'cmake_args' from command line to 'None'
+[4.768s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'cmake_target' from command line to 'None'
+[4.768s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[4.768s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'cmake_clean_cache' from command line to 'False'
+[4.768s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'cmake_clean_first' from command line to 'False'
+[4.768s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'cmake_force_configure' from command line to 'False'
+[4.769s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'ament_cmake_args' from command line to 'None'
+[4.769s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'catkin_cmake_args' from command line to 'None'
+[4.769s] Level 5:colcon.colcon_core.verb:set package 'yolov5_ros' build argument 'catkin_skip_building_tests' from command line to 'False'
+[4.769s] DEBUG:colcon.colcon_core.verb:Building package 'yolov5_ros' with the following arguments: {'ament_cmake_args': None, 'build_base': '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros', 'merge_install': False, 'path': '/tmp/.X11-unix/ROS2_final_Thesis/src/YOLOv5-ROS/yolov5_ros', 'symlink_install': True, 'test_result_base': None}
+[4.787s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[4.915s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[4.917s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/tmp/.X11-unix/ROS2_final_Thesis/src/bbox_ex_msgs' with build type 'ament_cmake'
+[4.918s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/tmp/.X11-unix/ROS2_final_Thesis/src/bbox_ex_msgs'
+[4.992s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[4.994s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.994s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.131s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/tmp/.X11-unix/ROS2_final_Thesis/src/rplidar_ros2' with build type 'ament_cmake'
+[5.133s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/tmp/.X11-unix/ROS2_final_Thesis/src/rplidar_ros2'
+[5.183s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.183s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.279s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2' with build type 'ament_cmake'
+[5.280s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2'
+[5.335s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.336s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.463s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/tmp/.X11-unix/ROS2_final_Thesis/build/bboxes_ex_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics /usr/bin/cmake --build /tmp/.X11-unix/ROS2_final_Thesis/build/bboxes_ex_msgs -- -j4 -l4
+[5.528s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/tmp/.X11-unix/ROS2_final_Thesis/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics /usr/bin/cmake --build /tmp/.X11-unix/ROS2_final_Thesis/build/rplidar_ros -- -j4 -l4
+[5.550s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics /usr/bin/cmake --build /tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2 -- -j4 -l4
+[6.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics /usr/bin/cmake --build /tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2 -- -j4 -l4
+[6.262s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/tmp/.X11-unix/ROS2_final_Thesis/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics /usr/bin/cmake --build /tmp/.X11-unix/ROS2_final_Thesis/build/rplidar_ros -- -j4 -l4
+[6.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics /usr/bin/cmake --install /tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2
+[6.478s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/tmp/.X11-unix/ROS2_final_Thesis/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics /usr/bin/cmake --install /tmp/.X11-unix/ROS2_final_Thesis/build/rplidar_ros
+[6.616s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[6.640s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/tmp/.X11-unix/ROS2_final_Thesis/build/rplidar_ros' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics /usr/bin/cmake --install /tmp/.X11-unix/ROS2_final_Thesis/build/rplidar_ros
+[6.739s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros' for CMake module files
+[6.743s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros' for CMake config files
+[6.750s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[6.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[6.796s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[6.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[6.814s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib'
+[6.815s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'ld_library_path_lib')
+[6.856s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.ps1'
+[6.858s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.dsv'
+[6.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.sh'
+[6.861s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/bin'
+[6.862s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[6.863s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib/python3.6/site-packages'
+[6.863s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/bin'
+[6.909s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[6.917s] INFO:colcon.colcon_core.shell:Creating package descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[6.922s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/package.sh'
+[6.927s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/package.bash'
+[6.934s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[6.939s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[6.959s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/tmp/.X11-unix/ROS2_final_Thesis/build/bboxes_ex_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics /usr/bin/cmake --build /tmp/.X11-unix/ROS2_final_Thesis/build/bboxes_ex_msgs -- -j4 -l4
+[6.972s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[6.990s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics /usr/bin/cmake --install /tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2
+[7.053s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2' for CMake module files
+[7.065s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2' for CMake config files
+[7.072s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[7.127s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[7.130s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[7.132s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[7.137s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/lib'
+[7.137s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/bin'
+[7.138s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[7.139s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/lib/python3.6/site-packages'
+[7.140s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/bin'
+[7.187s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[7.191s] INFO:colcon.colcon_core.shell:Creating package descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[7.194s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[7.197s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[7.200s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[7.202s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[7.270s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rplidar_ros)
+[7.345s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros' for CMake module files
+[7.349s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros' for CMake config files
+[7.352s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'cmake_prefix_path')
+[7.401s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.ps1'
+[7.403s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.dsv'
+[7.405s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/hook/cmake_prefix_path.sh'
+[7.409s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib'
+[7.409s] Level 1:colcon.colcon_core.shell:create_environment_hook('rplidar_ros', 'ld_library_path_lib')
+[7.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.ps1'
+[7.453s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.dsv'
+[7.455s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/hook/ld_library_path_lib.sh'
+[7.457s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/bin'
+[7.458s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib/pkgconfig/rplidar_ros.pc'
+[7.459s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib/python3.6/site-packages'
+[7.460s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/bin'
+[7.505s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/package.ps1'
+[7.508s] INFO:colcon.colcon_core.shell:Creating package descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/package.dsv'
+[7.511s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/package.sh'
+[7.513s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/package.bash'
+[7.515s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/package.zsh'
+[7.517s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/colcon-core/packages/rplidar_ros)
+[7.542s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/tmp/.X11-unix/ROS2_final_Thesis/build/bboxes_ex_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics /usr/bin/cmake --install /tmp/.X11-unix/ROS2_final_Thesis/build/bboxes_ex_msgs
+[7.599s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[7.665s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2' for CMake module files
+[7.670s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2' for CMake config files
+[7.672s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[7.719s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[7.721s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[7.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[7.726s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/lib'
+[7.727s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/bin'
+[7.727s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[7.728s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/lib/python3.6/site-packages'
+[7.729s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/bin'
+[7.783s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[7.786s] INFO:colcon.colcon_core.shell:Creating package descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[7.789s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[7.791s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[7.794s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[7.796s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[7.979s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bboxes_ex_msgs)
+[7.996s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/tmp/.X11-unix/ROS2_final_Thesis/build/bboxes_ex_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics /usr/bin/cmake --install /tmp/.X11-unix/ROS2_final_Thesis/build/bboxes_ex_msgs
+[8.044s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs' for CMake module files
+[8.049s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs' for CMake config files
+[8.056s] Level 1:colcon.colcon_core.shell:create_environment_hook('bboxes_ex_msgs', 'cmake_prefix_path')
+[8.098s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/cmake_prefix_path.ps1'
+[8.100s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/cmake_prefix_path.dsv'
+[8.102s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/cmake_prefix_path.sh'
+[8.105s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib'
+[8.106s] Level 1:colcon.colcon_core.shell:create_environment_hook('bboxes_ex_msgs', 'ld_library_path_lib')
+[8.152s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/ld_library_path_lib.ps1'
+[8.154s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/ld_library_path_lib.dsv'
+[8.157s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/ld_library_path_lib.sh'
+[8.159s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/bin'
+[8.159s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/pkgconfig/bboxes_ex_msgs.pc'
+[8.160s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages'
+[8.160s] Level 1:colcon.colcon_core.shell:create_environment_hook('bboxes_ex_msgs', 'pythonpath')
+[8.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/pythonpath.ps1'
+[8.204s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/pythonpath.dsv'
+[8.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/pythonpath.sh'
+[8.207s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/bin'
+[8.254s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/package.ps1'
+[8.259s] INFO:colcon.colcon_core.shell:Creating package descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/package.dsv'
+[8.261s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/package.sh'
+[8.264s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/package.bash'
+[8.265s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/package.zsh'
+[8.267s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/colcon-core/packages/bboxes_ex_msgs)
+[8.595s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(bboxes_ex_msgs)
+[8.658s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs' for CMake module files
+[8.662s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs' for CMake config files
+[8.666s] Level 1:colcon.colcon_core.shell:create_environment_hook('bboxes_ex_msgs', 'cmake_prefix_path')
+[8.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/cmake_prefix_path.ps1'
+[8.716s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/cmake_prefix_path.dsv'
+[8.718s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/cmake_prefix_path.sh'
+[8.722s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib'
+[8.722s] Level 1:colcon.colcon_core.shell:create_environment_hook('bboxes_ex_msgs', 'ld_library_path_lib')
+[8.762s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/ld_library_path_lib.ps1'
+[8.764s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/ld_library_path_lib.dsv'
+[8.766s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/ld_library_path_lib.sh'
+[8.768s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/bin'
+[8.768s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/pkgconfig/bboxes_ex_msgs.pc'
+[8.769s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages'
+[8.769s] Level 1:colcon.colcon_core.shell:create_environment_hook('bboxes_ex_msgs', 'pythonpath')
+[8.816s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/pythonpath.ps1'
+[8.818s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/pythonpath.dsv'
+[8.820s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/hook/pythonpath.sh'
+[8.822s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/bin'
+[8.871s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/package.ps1'
+[8.875s] INFO:colcon.colcon_core.shell:Creating package descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/package.dsv'
+[8.878s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/package.sh'
+[8.881s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/package.bash'
+[8.885s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/package.zsh'
+[8.887s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/colcon-core/packages/bboxes_ex_msgs)
+[8.889s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/tmp/.X11-unix/ROS2_final_Thesis/src/cv_basics' with build type 'ament_python'
+[8.890s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_basics', 'ament_prefix_path')
+[8.933s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/share/cv_basics/hook/ament_prefix_path.ps1'
+[8.938s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/share/cv_basics/hook/ament_prefix_path.dsv'
+[8.940s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/share/cv_basics/hook/ament_prefix_path.sh'
+[9.002s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.003s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.098s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/tmp/.X11-unix/ROS2_final_Thesis/src/YOLOv5-ROS/yolov5_ros' with build type 'ament_python'
+[9.101s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov5_ros', 'ament_prefix_path')
+[9.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/share/yolov5_ros/hook/ament_prefix_path.ps1'
+[9.156s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/share/yolov5_ros/hook/ament_prefix_path.dsv'
+[9.158s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/share/yolov5_ros/hook/ament_prefix_path.sh'
+[9.205s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.205s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.034s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/tmp/.X11-unix/ROS2_final_Thesis/src/cv_basics'
+[11.079s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.080s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[12.958s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/tmp/.X11-unix/ROS2_final_Thesis/src/YOLOv5-ROS/yolov5_ros'
+[13.010s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[13.011s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[16.060s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics': CMAKE_PREFIX_PATH=/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/opt/ros/foxy/install LD_LIBRARY_PATH=/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib:/opt/ros/foxy/install/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/install/lib:/usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib PYTHONPATH=/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics/prefix_override:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/opt/ros/foxy/install/lib/python3.6/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics/build --no-deps install_data
+[16.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros': CMAKE_PREFIX_PATH=/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/opt/ros/foxy/install LD_LIBRARY_PATH=/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib:/opt/ros/foxy/install/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/install/lib:/usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib PYTHONPATH=/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros/prefix_override:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/opt/ros/foxy/install/lib/python3.6/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros/build --no-deps install_data
+[19.154s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov5_ros', 'pythonpath_develop')
+[19.177s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros' returned '0': CMAKE_PREFIX_PATH=/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/opt/ros/foxy/install LD_LIBRARY_PATH=/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib:/opt/ros/foxy/install/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/install/lib:/usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib PYTHONPATH=/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros/prefix_override:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/opt/ros/foxy/install/lib/python3.6/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros/build --no-deps install_data
+[19.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros/share/yolov5_ros/hook/pythonpath_develop.ps1'
+[19.226s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros/share/yolov5_ros/hook/pythonpath_develop.dsv'
+[19.228s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros/share/yolov5_ros/hook/pythonpath_develop.sh'
+[19.296s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros' for CMake module files
+[19.301s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros' for CMake config files
+[19.312s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib'
+[19.313s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/bin'
+[19.314s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/pkgconfig/yolov5_ros.pc'
+[19.315s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages'
+[19.315s] Level 1:colcon.colcon_core.shell:create_environment_hook('yolov5_ros', 'pythonpath')
+[19.370s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/share/yolov5_ros/hook/pythonpath.ps1'
+[19.378s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/share/yolov5_ros/hook/pythonpath.dsv'
+[19.380s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/share/yolov5_ros/hook/pythonpath.sh'
+[19.384s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/bin'
+[19.385s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(yolov5_ros)
+[19.444s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/share/yolov5_ros/package.ps1'
+[19.447s] INFO:colcon.colcon_core.shell:Creating package descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/share/yolov5_ros/package.dsv'
+[19.450s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/share/yolov5_ros/package.sh'
+[19.454s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/share/yolov5_ros/package.bash'
+[19.456s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/share/yolov5_ros/package.zsh'
+[19.459s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/share/colcon-core/packages/yolov5_ros)
+[19.506s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_basics', 'pythonpath_develop')
+[19.529s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics' returned '0': CMAKE_PREFIX_PATH=/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/opt/ros/foxy/install LD_LIBRARY_PATH=/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib:/opt/ros/foxy/install/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/install/lib:/usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib PYTHONPATH=/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics/prefix_override:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/opt/ros/foxy/install/lib/python3.6/site-packages /usr/bin/python3 setup.py develop --editable --build-directory /tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics/build --no-deps install_data
+[19.560s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics/share/cv_basics/hook/pythonpath_develop.ps1'
+[19.565s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics/share/cv_basics/hook/pythonpath_develop.dsv'
+[19.567s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics/share/cv_basics/hook/pythonpath_develop.sh'
+[19.628s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics' for CMake module files
+[19.632s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics' for CMake config files
+[19.636s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib'
+[19.637s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/bin'
+[19.637s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/pkgconfig/cv_basics.pc'
+[19.638s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages'
+[19.639s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_basics', 'pythonpath')
+[19.683s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/share/cv_basics/hook/pythonpath.ps1'
+[19.686s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/share/cv_basics/hook/pythonpath.dsv'
+[19.688s] INFO:colcon.colcon_core.shell:Creating environment hook '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/share/cv_basics/hook/pythonpath.sh'
+[19.690s] Level 1:colcon.colcon_core.environment:checking '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/bin'
+[19.690s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cv_basics)
+[19.742s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/share/cv_basics/package.ps1'
+[19.745s] INFO:colcon.colcon_core.shell:Creating package descriptor '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/share/cv_basics/package.dsv'
+[19.748s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/share/cv_basics/package.sh'
+[19.750s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/share/cv_basics/package.bash'
+[19.752s] INFO:colcon.colcon_core.shell:Creating package script '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/share/cv_basics/package.zsh'
+[19.753s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/share/colcon-core/packages/cv_basics)
+[19.755s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[19.762s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[19.762s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[19.763s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[19.908s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[19.908s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[19.909s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[19.909s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[19.910s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.InvalidFileContent: D-Bus library appears to be incorrectly set up: see the manual page for dbus-uuidgen to correct this issue. (Failed to open "/var/lib/dbus/machine-id": No such file or directory; UUID file '/etc/machine-id' should contain a hex string of length 32, not length 0, with no other text)
+[19.910s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[19.950s] INFO:colcon.colcon_core.shell:Creating prefix script '/tmp/.X11-unix/ROS2_final_Thesis/install/local_setup.ps1'
+[19.958s] INFO:colcon.colcon_core.shell:Creating prefix util module '/tmp/.X11-unix/ROS2_final_Thesis/install/_local_setup_util_ps1.py'
+[19.971s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/tmp/.X11-unix/ROS2_final_Thesis/install/setup.ps1'
+[19.989s] INFO:colcon.colcon_core.shell:Creating prefix script '/tmp/.X11-unix/ROS2_final_Thesis/install/local_setup.sh'
+[19.994s] INFO:colcon.colcon_core.shell:Creating prefix util module '/tmp/.X11-unix/ROS2_final_Thesis/install/_local_setup_util_sh.py'
+[19.996s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/tmp/.X11-unix/ROS2_final_Thesis/install/setup.sh'
+[20.013s] INFO:colcon.colcon_core.shell:Creating prefix script '/tmp/.X11-unix/ROS2_final_Thesis/install/local_setup.bash'
+[20.017s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/tmp/.X11-unix/ROS2_final_Thesis/install/setup.bash'
+[20.034s] INFO:colcon.colcon_core.shell:Creating prefix script '/tmp/.X11-unix/ROS2_final_Thesis/install/local_setup.zsh'
+[20.038s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/tmp/.X11-unix/ROS2_final_Thesis/install/setup.zsh'

@@ -1,0 +1,476 @@
+[0.000000] (-) TimerEvent: {}
+[0.000661] (bboxes_ex_msgs) JobQueued: {'identifier': 'bboxes_ex_msgs', 'dependencies': OrderedDict()}
+[0.000905] (rplidar_ros) JobQueued: {'identifier': 'rplidar_ros', 'dependencies': OrderedDict()}
+[0.001108] (cv_basics) JobQueued: {'identifier': 'cv_basics', 'dependencies': OrderedDict([('bboxes_ex_msgs', '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs')])}
+[0.001333] (yolov5_ros) JobQueued: {'identifier': 'yolov5_ros', 'dependencies': OrderedDict([('bboxes_ex_msgs', '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs')])}
+[0.001532] (sllidar_ros2) JobQueued: {'identifier': 'sllidar_ros2', 'dependencies': OrderedDict([('bboxes_ex_msgs', '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs'), ('cv_basics', '/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics'), ('yolov5_ros', '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros')])}
+[0.001740] (bboxes_ex_msgs) JobStarted: {'identifier': 'bboxes_ex_msgs'}
+[0.082007] (-) TimerEvent: {}
+[0.187959] (-) TimerEvent: {}
+[0.289025] (-) TimerEvent: {}
+[0.291492] (rplidar_ros) JobStarted: {'identifier': 'rplidar_ros'}
+[0.396485] (-) TimerEvent: {}
+[0.500431] (-) TimerEvent: {}
+[0.548217] (bboxes_ex_msgs) JobProgress: {'identifier': 'bboxes_ex_msgs', 'progress': 'cmake'}
+[0.554331] (bboxes_ex_msgs) JobProgress: {'identifier': 'bboxes_ex_msgs', 'progress': 'build'}
+[0.558871] (bboxes_ex_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/tmp/.X11-unix/ROS2_final_Thesis/build/bboxes_ex_msgs', '--', '-j4', '-l4'], 'cwd': '/tmp/.X11-unix/ROS2_final_Thesis/build/bboxes_ex_msgs', 'env': OrderedDict([('PYTHONIOENCODING', 'utf-8'), ('HOSTNAME', 'jetson-nano'), ('LD_LIBRARY_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib:/opt/ros/foxy/install/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/install/lib:/usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib:'), ('SHLVL', '1'), ('OLDPWD', '/tmp/.X11-unix'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install:/opt/ros/foxy/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('PKG_CONFIG_PATH', '/opt/ros/foxy/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/foxy/install/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/install/bin:/usr/local/cuda/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('AMENT_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/opt/ros/foxy/install'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/tmp/.X11-unix/ROS2_final_Thesis/build/bboxes_ex_msgs'), ('PYTHONPATH', '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages:/opt/ros/foxy/install/lib/python3.6/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/opt/ros/foxy/install:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics')]), 'shell': False}
+[0.600913] (-) TimerEvent: {}
+[0.646484] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'cmake'}
+[0.694999] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'build'}
+[0.699517] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--build', '/tmp/.X11-unix/ROS2_final_Thesis/build/rplidar_ros', '--', '-j4', '-l4'], 'cwd': '/tmp/.X11-unix/ROS2_final_Thesis/build/rplidar_ros', 'env': OrderedDict([('PYTHONIOENCODING', 'utf-8'), ('HOSTNAME', 'jetson-nano'), ('LD_LIBRARY_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib:/opt/ros/foxy/install/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/install/lib:/usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib:'), ('SHLVL', '1'), ('OLDPWD', '/tmp/.X11-unix'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install:/opt/ros/foxy/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('PKG_CONFIG_PATH', '/opt/ros/foxy/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/foxy/install/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/install/bin:/usr/local/cuda/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('AMENT_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/opt/ros/foxy/install'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/tmp/.X11-unix/ROS2_final_Thesis/build/rplidar_ros'), ('PYTHONPATH', '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages:/opt/ros/foxy/install/lib/python3.6/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/opt/ros/foxy/install:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics')]), 'shell': False}
+[0.707367] (-) TimerEvent: {}
+[0.812005] (-) TimerEvent: {}
+[0.914507] (-) TimerEvent: {}
+[1.015912] (-) TimerEvent: {}
+[1.126351] (-) TimerEvent: {}
+[1.174081] (bboxes_ex_msgs) StdoutLine: {'line': b'[  2%] Built target bboxes_ex_msgs__cpp\n'}
+[1.227736] (-) TimerEvent: {}
+[1.328754] (-) TimerEvent: {}
+[1.368610] (bboxes_ex_msgs) StdoutLine: {'line': b'[ 12%] Built target bboxes_ex_msgs__rosidl_generator_c\n'}
+[1.372936] (rplidar_ros) StdoutLine: {'line': b'[ 77%] Built target rplidar_composition_node\n'}
+[1.430761] (-) TimerEvent: {}
+[1.532049] (-) TimerEvent: {}
+[1.544942] (rplidar_ros) StdoutLine: {'line': b'[100%] Built target rplidar_composition\n'}
+[1.553063] (bboxes_ex_msgs) StdoutLine: {'line': b'[ 23%] Built target bboxes_ex_msgs__rosidl_typesupport_introspection_cpp\n'}
+[1.616116] (rplidar_ros) CommandEnded: {'returncode': 0}
+[1.634499] (-) TimerEvent: {}
+[1.709537] (bboxes_ex_msgs) StdoutLine: {'line': b'[ 33%] Built target bboxes_ex_msgs__rosidl_typesupport_introspection_c\n'}
+[1.737904] (-) TimerEvent: {}
+[1.841551] (-) TimerEvent: {}
+[1.906997] (bboxes_ex_msgs) StdoutLine: {'line': b'[ 43%] Built target bboxes_ex_msgs__rosidl_typesupport_c\n'}
+[1.941764] (-) TimerEvent: {}
+[2.042946] (-) TimerEvent: {}
+[2.078450] (bboxes_ex_msgs) StdoutLine: {'line': b'[ 53%] Built target bboxes_ex_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.092066] (rplidar_ros) JobProgress: {'identifier': 'rplidar_ros', 'progress': 'install'}
+[2.133206] (rplidar_ros) Command: {'cmd': ['/usr/bin/cmake', '--install', '/tmp/.X11-unix/ROS2_final_Thesis/build/rplidar_ros'], 'cwd': '/tmp/.X11-unix/ROS2_final_Thesis/build/rplidar_ros', 'env': OrderedDict([('PYTHONIOENCODING', 'utf-8'), ('HOSTNAME', 'jetson-nano'), ('LD_LIBRARY_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib:/opt/ros/foxy/install/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/install/lib:/usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib:'), ('SHLVL', '1'), ('OLDPWD', '/tmp/.X11-unix'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install:/opt/ros/foxy/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('PKG_CONFIG_PATH', '/opt/ros/foxy/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/foxy/install/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/install/bin:/usr/local/cuda/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('AMENT_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/opt/ros/foxy/install'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/tmp/.X11-unix/ROS2_final_Thesis/build/rplidar_ros'), ('PYTHONPATH', '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages:/opt/ros/foxy/install/lib/python3.6/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/opt/ros/foxy/install:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics')]), 'shell': False}
+[2.144144] (-) TimerEvent: {}
+[2.168401] (rplidar_ros) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.173491] (rplidar_ros) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.183984] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib/rplidar_ros/rplidar_composition\n'}
+[2.188233] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/launch/filtered_scan.py\n'}
+[2.193841] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/launch/rplidar.launch.py\n'}
+[2.194846] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/launch/rplidar_a3.launch.py\n'}
+[2.197106] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1.launch.py\n'}
+[2.200228] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/launch/rplidar_s1_tcp.launch.py\n'}
+[2.201363] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/launch/test_rplidar_a3.launch.py\n'}
+[2.203660] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar.launch.py\n'}
+[2.205110] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_a3.launch.py\n'}
+[2.206528] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1.launch.py\n'}
+[2.207732] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/launch/view_rplidar_s1_tcp.launch.py\n'}
+[2.219756] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/rviz/rplidar.rviz\n'}
+[2.221400] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib/librplidar_composition_node.so\n'}
+[2.226870] (bboxes_ex_msgs) StdoutLine: {'line': b'[ 64%] Built target bboxes_ex_msgs__rosidl_typesupport_cpp\n'}
+[2.227639] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/include/rplidar_node.hpp\n'}
+[2.229956] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/include/visibility.h\n'}
+[2.239803] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib/rplidar_ros/rplidar_composition\n'}
+[2.253814] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/ament_index/resource_index/package_run_dependencies/rplidar_ros\n'}
+[2.254643] (-) TimerEvent: {}
+[2.255281] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/ament_index/resource_index/parent_prefix_path/rplidar_ros\n'}
+[2.256077] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.sh\n'}
+[2.256762] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/environment/ament_prefix_path.dsv\n'}
+[2.257588] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/environment/path.sh\n'}
+[2.258627] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/environment/path.dsv\n'}
+[2.262165] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/local_setup.bash\n'}
+[2.263715] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/local_setup.sh\n'}
+[2.265369] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/local_setup.zsh\n'}
+[2.268129] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/local_setup.dsv\n'}
+[2.270271] (rplidar_ros) StdoutLine: {'line': b'-- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/package.dsv\n'}
+[2.300614] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/ament_index/resource_index/packages/rplidar_ros\n'}
+[2.304188] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/ament_index/resource_index/rclcpp_components/rplidar_ros\n'}
+[2.312787] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[2.314655] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[2.320218] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig.cmake\n'}
+[2.328936] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/cmake/rplidar_rosConfig-version.cmake\n'}
+[2.330162] (rplidar_ros) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/share/rplidar_ros/package.xml\n'}
+[2.342603] (rplidar_ros) CommandEnded: {'returncode': 0}
+[2.362875] (bboxes_ex_msgs) StdoutLine: {'line': b'[ 74%] Built target bboxes_ex_msgs__rosidl_typesupport_fastrtps_c\n'}
+[2.363753] (-) TimerEvent: {}
+[2.468845] (bboxes_ex_msgs) StdoutLine: {'line': b'[ 74%] Built target bboxes_ex_msgs\n'}
+[2.469748] (-) TimerEvent: {}
+[2.571664] (-) TimerEvent: {}
+[2.584612] (bboxes_ex_msgs) StdoutLine: {'line': b'[ 76%] Built target bboxes_ex_msgs__py\n'}
+[2.685522] (-) TimerEvent: {}
+[2.726951] (bboxes_ex_msgs) StdoutLine: {'line': b'[ 84%] Built target bboxes_ex_msgs__python\n'}
+[2.793368] (-) TimerEvent: {}
+[2.901987] (-) TimerEvent: {}
+[2.944818] (bboxes_ex_msgs) StdoutLine: {'line': b'[ 89%] Built target bboxes_ex_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.009948] (-) TimerEvent: {}
+[3.112610] (-) TimerEvent: {}
+[3.138141] (bboxes_ex_msgs) StdoutLine: {'line': b'[ 94%] Built target bboxes_ex_msgs__rosidl_typesupport_c__pyext\n'}
+[3.212934] (-) TimerEvent: {}
+[3.282746] (bboxes_ex_msgs) StdoutLine: {'line': b'[100%] Built target bboxes_ex_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[3.329504] (-) TimerEvent: {}
+[3.346948] (bboxes_ex_msgs) CommandEnded: {'returncode': 0}
+[3.433494] (-) TimerEvent: {}
+[3.537482] (-) TimerEvent: {}
+[3.648116] (-) TimerEvent: {}
+[3.754127] (-) TimerEvent: {}
+[3.865949] (-) TimerEvent: {}
+[3.979312] (-) TimerEvent: {}
+[4.080718] (-) TimerEvent: {}
+[4.184420] (-) TimerEvent: {}
+[4.214603] (rplidar_ros) JobEnded: {'identifier': 'rplidar_ros', 'rc': 0}
+[4.247781] (bboxes_ex_msgs) JobProgress: {'identifier': 'bboxes_ex_msgs', 'progress': 'install'}
+[4.249452] (bboxes_ex_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/tmp/.X11-unix/ROS2_final_Thesis/build/bboxes_ex_msgs'], 'cwd': '/tmp/.X11-unix/ROS2_final_Thesis/build/bboxes_ex_msgs', 'env': OrderedDict([('PYTHONIOENCODING', 'utf-8'), ('HOSTNAME', 'jetson-nano'), ('LD_LIBRARY_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib:/opt/ros/foxy/install/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/install/lib:/usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib:'), ('SHLVL', '1'), ('OLDPWD', '/tmp/.X11-unix'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install:/opt/ros/foxy/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('PKG_CONFIG_PATH', '/opt/ros/foxy/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/foxy/install/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/install/bin:/usr/local/cuda/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('AMENT_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/opt/ros/foxy/install'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/tmp/.X11-unix/ROS2_final_Thesis/build/bboxes_ex_msgs'), ('PYTHONPATH', '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages:/opt/ros/foxy/install/lib/python3.6/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/opt/ros/foxy/install:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics')]), 'shell': False}
+[4.284752] (-) TimerEvent: {}
+[4.304601] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.306728] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.310098] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/ament_index/resource_index/rosidl_interfaces/bboxes_ex_msgs\n'}
+[4.321966] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/bounding_box.h\n'}
+[4.322987] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/bounding_boxes.h\n'}
+[4.323929] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_box__functions.h\n'}
+[4.324634] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_box__struct.h\n'}
+[4.332996] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_box__type_support.h\n'}
+[4.334132] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_boxes__functions.h\n'}
+[4.335199] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_boxes__struct.h\n'}
+[4.338051] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_boxes__type_support.h\n'}
+[4.338792] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.339495] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/environment/library_path.sh\n'}
+[4.355693] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/environment/library_path.dsv\n'}
+[4.363584] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_box__rosidl_typesupport_fastrtps_c.h\n'}
+[4.364688] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_boxes__rosidl_typesupport_fastrtps_c.h\n'}
+[4.369581] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.371006] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/libbboxes_ex_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.378663] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_box__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.381073] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_boxes__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.382699] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.386174] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/libbboxes_ex_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.387066] (-) TimerEvent: {}
+[4.391724] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_box__rosidl_typesupport_introspection_c.h\n'}
+[4.395323] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_boxes__rosidl_typesupport_introspection_c.h\n'}
+[4.397507] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.400362] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/bounding_box.hpp\n'}
+[4.406934] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/bounding_boxes.hpp\n'}
+[4.407630] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_box__builder.hpp\n'}
+[4.408268] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_box__struct.hpp\n'}
+[4.409925] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_box__traits.hpp\n'}
+[4.413953] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_boxes__builder.hpp\n'}
+[4.415435] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_boxes__struct.hpp\n'}
+[4.418762] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_boxes__traits.hpp\n'}
+[4.423882] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_box__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.424825] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/include/bboxes_ex_msgs/msg/detail/bounding_boxes__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.426551] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/environment/pythonpath.sh\n'}
+[4.427890] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/environment/pythonpath.dsv\n'}
+[4.429601] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages/bboxes_ex_msgs/__init__.py\n'}
+[4.431782] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages/bboxes_ex_msgs/msg/__init__.py\n'}
+[4.432959] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages/bboxes_ex_msgs/msg/_bounding_box.py\n'}
+[4.434530] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages/bboxes_ex_msgs/msg/_bounding_boxes.py\n'}
+[4.437908] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages/bboxes_ex_msgs/bboxes_ex_msgs_s__rosidl_typesupport_fastrtps_c.cpython-36m-aarch64-linux-gnu.so\n'}
+[4.440811] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages/bboxes_ex_msgs/bboxes_ex_msgs_s__rosidl_typesupport_introspection_c.cpython-36m-aarch64-linux-gnu.so\n'}
+[4.445067] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages/bboxes_ex_msgs/bboxes_ex_msgs_s__rosidl_typesupport_c.cpython-36m-aarch64-linux-gnu.so\n'}
+[4.446118] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/libbboxes_ex_msgs__python.so\n'}
+[4.447521] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/msg/BoundingBox.idl\n'}
+[4.448628] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/msg/BoundingBoxes.idl\n'}
+[4.449911] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/msg/BoundingBox.msg\n'}
+[4.451069] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/msg/BoundingBoxes.msg\n'}
+[4.457620] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/ament_index/resource_index/package_run_dependencies/bboxes_ex_msgs\n'}
+[4.460991] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/ament_index/resource_index/parent_prefix_path/bboxes_ex_msgs\n'}
+[4.462528] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/environment/ament_prefix_path.sh\n'}
+[4.463808] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/environment/ament_prefix_path.dsv\n'}
+[4.464919] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/environment/path.sh\n'}
+[4.468312] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/environment/path.dsv\n'}
+[4.471846] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/local_setup.bash\n'}
+[4.472592] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/local_setup.sh\n'}
+[4.473660] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/local_setup.zsh\n'}
+[4.477708] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/local_setup.dsv\n'}
+[4.478437] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/package.dsv\n'}
+[4.487403] (-) TimerEvent: {}
+[4.490091] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/ament_index/resource_index/packages/bboxes_ex_msgs\n'}
+[4.491631] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[4.492728] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.493846] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.494909] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.495969] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.497001] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.498661] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.500033] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/bboxes_ex_msgsConfig.cmake\n'}
+[4.500782] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/bboxes_ex_msgsConfig-version.cmake\n'}
+[4.501839] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/package.xml\n'}
+[4.504155] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/libbboxes_ex_msgs__rosidl_generator_c.so\n'}
+[4.507416] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/libbboxes_ex_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.508501] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/libbboxes_ex_msgs__rosidl_typesupport_c.so\n'}
+[4.509938] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/libbboxes_ex_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.511532] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/libbboxes_ex_msgs__rosidl_typesupport_cpp.so\n'}
+[4.587577] (-) TimerEvent: {}
+[4.688588] (-) TimerEvent: {}
+[4.723332] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/bboxes_ex_msgs__rosidl_generator_cExport.cmake\n'}
+[4.724576] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/bboxes_ex_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.725499] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/bboxes_ex_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.726051] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/bboxes_ex_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.726668] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/bboxes_ex_msgs__rosidl_typesupport_cExport.cmake\n'}
+[4.727524] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/bboxes_ex_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.728259] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/bboxes_ex_msgs__rosidl_generator_cppExport.cmake\n'}
+[4.729629] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/bboxes_ex_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.730646] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/bboxes_ex_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.731404] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/bboxes_ex_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[4.732151] (bboxes_ex_msgs) StdoutLine: {'line': b'-- Up-to-date: /tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/share/bboxes_ex_msgs/cmake/bboxes_ex_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.743075] (bboxes_ex_msgs) CommandEnded: {'returncode': 0}
+[4.793873] (-) TimerEvent: {}
+[4.916296] (-) TimerEvent: {}
+[5.023024] (-) TimerEvent: {}
+[5.124313] (-) TimerEvent: {}
+[5.225878] (-) TimerEvent: {}
+[5.327654] (-) TimerEvent: {}
+[5.428870] (-) TimerEvent: {}
+[5.531544] (-) TimerEvent: {}
+[5.653148] (-) TimerEvent: {}
+[5.766555] (-) TimerEvent: {}
+[5.868712] (-) TimerEvent: {}
+[5.977414] (-) TimerEvent: {}
+[6.085541] (-) TimerEvent: {}
+[6.186917] (-) TimerEvent: {}
+[6.204854] (bboxes_ex_msgs) JobEnded: {'identifier': 'bboxes_ex_msgs', 'rc': 0}
+[6.209378] (cv_basics) JobStarted: {'identifier': 'cv_basics'}
+[6.287685] (-) TimerEvent: {}
+[6.396929] (-) TimerEvent: {}
+[6.497799] (yolov5_ros) JobStarted: {'identifier': 'yolov5_ros'}
+[6.498461] (-) TimerEvent: {}
+[6.604396] (-) TimerEvent: {}
+[6.710428] (-) TimerEvent: {}
+[6.812511] (-) TimerEvent: {}
+[6.913888] (-) TimerEvent: {}
+[7.014707] (-) TimerEvent: {}
+[7.115577] (-) TimerEvent: {}
+[7.216452] (-) TimerEvent: {}
+[7.317767] (-) TimerEvent: {}
+[7.418693] (-) TimerEvent: {}
+[7.520345] (-) TimerEvent: {}
+[7.621126] (-) TimerEvent: {}
+[7.725582] (-) TimerEvent: {}
+[7.829531] (-) TimerEvent: {}
+[7.931183] (-) TimerEvent: {}
+[8.033951] (-) TimerEvent: {}
+[8.135962] (-) TimerEvent: {}
+[8.237540] (-) TimerEvent: {}
+[8.342098] (-) TimerEvent: {}
+[8.445593] (-) TimerEvent: {}
+[8.547807] (-) TimerEvent: {}
+[8.650043] (-) TimerEvent: {}
+[8.751478] (-) TimerEvent: {}
+[8.861353] (-) TimerEvent: {}
+[8.974855] (-) TimerEvent: {}
+[9.079268] (-) TimerEvent: {}
+[9.187796] (-) TimerEvent: {}
+[9.289242] (-) TimerEvent: {}
+[9.392825] (-) TimerEvent: {}
+[9.495345] (-) TimerEvent: {}
+[9.597697] (-) TimerEvent: {}
+[9.700855] (-) TimerEvent: {}
+[9.803676] (-) TimerEvent: {}
+[9.904515] (-) TimerEvent: {}
+[10.005564] (-) TimerEvent: {}
+[10.106596] (-) TimerEvent: {}
+[10.207535] (-) TimerEvent: {}
+[10.309037] (-) TimerEvent: {}
+[10.410119] (-) TimerEvent: {}
+[10.511083] (-) TimerEvent: {}
+[10.612158] (-) TimerEvent: {}
+[10.714134] (-) TimerEvent: {}
+[10.815019] (-) TimerEvent: {}
+[10.916771] (-) TimerEvent: {}
+[11.021058] (-) TimerEvent: {}
+[11.122230] (-) TimerEvent: {}
+[11.223101] (-) TimerEvent: {}
+[11.325712] (-) TimerEvent: {}
+[11.426665] (-) TimerEvent: {}
+[11.529987] (-) TimerEvent: {}
+[11.630844] (-) TimerEvent: {}
+[11.737732] (-) TimerEvent: {}
+[11.845110] (-) TimerEvent: {}
+[11.946413] (-) TimerEvent: {}
+[12.048176] (-) TimerEvent: {}
+[12.152872] (-) TimerEvent: {}
+[12.253761] (-) TimerEvent: {}
+[12.356071] (-) TimerEvent: {}
+[12.462518] (-) TimerEvent: {}
+[12.565362] (-) TimerEvent: {}
+[12.668436] (-) TimerEvent: {}
+[12.770567] (-) TimerEvent: {}
+[12.873482] (-) TimerEvent: {}
+[12.977408] (-) TimerEvent: {}
+[13.079591] (-) TimerEvent: {}
+[13.181559] (-) TimerEvent: {}
+[13.283014] (-) TimerEvent: {}
+[13.384109] (-) TimerEvent: {}
+[13.488834] (-) TimerEvent: {}
+[13.591836] (-) TimerEvent: {}
+[13.693510] (-) TimerEvent: {}
+[13.794354] (-) TimerEvent: {}
+[13.895953] (-) TimerEvent: {}
+[13.998055] (-) TimerEvent: {}
+[14.099606] (-) TimerEvent: {}
+[14.201964] (-) TimerEvent: {}
+[14.304454] (-) TimerEvent: {}
+[14.406509] (-) TimerEvent: {}
+[14.508723] (-) TimerEvent: {}
+[14.610625] (-) TimerEvent: {}
+[14.711425] (-) TimerEvent: {}
+[14.812232] (-) TimerEvent: {}
+[14.913109] (-) TimerEvent: {}
+[15.015563] (-) TimerEvent: {}
+[15.116527] (-) TimerEvent: {}
+[15.220210] (-) TimerEvent: {}
+[15.322178] (-) TimerEvent: {}
+[15.391914] (yolov5_ros) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros/build', '--no-deps', 'install_data'], 'cwd': '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros', 'env': {'PYTHONIOENCODING': 'utf-8', 'HOSTNAME': 'jetson-nano', 'LD_LIBRARY_PATH': '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib:/opt/ros/foxy/install/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/install/lib:/usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib', 'SHLVL': '1', 'OLDPWD': '/tmp/.X11-unix', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/tmp/.X11-unix/ROS2_final_Thesis/install:/opt/ros/foxy/install', 'ROS_DISTRO': 'foxy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'PKG_CONFIG_PATH': '/opt/ros/foxy/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/foxy/install/lib/pkgconfig', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/install/bin:/usr/local/cuda/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_ROOT': '/opt/ros/foxy', 'XAUTHORITY': '/tmp/.docker.xauth', 'AMENT_PREFIX_PATH': '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/opt/ros/foxy/install', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'PWD': '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros', 'PYTHONPATH': '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros/prefix_override:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/opt/ros/foxy/install/lib/python3.6/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/opt/ros/foxy/install'}, 'shell': False}
+[15.422875] (-) TimerEvent: {}
+[15.441974] (cv_basics) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics/build', '--no-deps', 'install_data'], 'cwd': '/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics', 'env': {'PYTHONIOENCODING': 'utf-8', 'HOSTNAME': 'jetson-nano', 'LD_LIBRARY_PATH': '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib:/opt/ros/foxy/install/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/install/lib:/usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib', 'SHLVL': '1', 'OLDPWD': '/tmp/.X11-unix', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/tmp/.X11-unix/ROS2_final_Thesis/install:/opt/ros/foxy/install', 'ROS_DISTRO': 'foxy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'PKG_CONFIG_PATH': '/opt/ros/foxy/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/foxy/install/lib/pkgconfig', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/install/bin:/usr/local/cuda/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_ROOT': '/opt/ros/foxy', 'XAUTHORITY': '/tmp/.docker.xauth', 'AMENT_PREFIX_PATH': '/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/opt/ros/foxy/install', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'PWD': '/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics', 'PYTHONPATH': '/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics/prefix_override:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/opt/ros/foxy/install/lib/python3.6/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/opt/ros/foxy/install'}, 'shell': False}
+[15.523118] (-) TimerEvent: {}
+[15.624693] (-) TimerEvent: {}
+[15.727465] (-) TimerEvent: {}
+[15.829098] (-) TimerEvent: {}
+[15.931858] (-) TimerEvent: {}
+[16.035473] (-) TimerEvent: {}
+[16.136671] (-) TimerEvent: {}
+[16.237648] (-) TimerEvent: {}
+[16.338706] (-) TimerEvent: {}
+[16.439544] (-) TimerEvent: {}
+[16.549070] (-) TimerEvent: {}
+[16.650788] (-) TimerEvent: {}
+[16.752643] (-) TimerEvent: {}
+[16.854464] (-) TimerEvent: {}
+[16.958297] (-) TimerEvent: {}
+[17.068391] (-) TimerEvent: {}
+[17.169199] (-) TimerEvent: {}
+[17.270041] (-) TimerEvent: {}
+[17.372468] (-) TimerEvent: {}
+[17.477126] (-) TimerEvent: {}
+[17.576022] (cv_basics) StderrLine: {'line': b"/usr/local/lib/python3.6/dist-packages/setuptools/dist.py:726: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[17.577210] (-) TimerEvent: {}
+[17.579659] (cv_basics) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[17.656681] (yolov5_ros) StderrLine: {'line': b"/usr/local/lib/python3.6/dist-packages/setuptools/dist.py:726: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[17.659703] (yolov5_ros) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[17.680583] (-) TimerEvent: {}
+[17.784109] (-) TimerEvent: {}
+[17.887839] (-) TimerEvent: {}
+[17.989454] (-) TimerEvent: {}
+[17.995744] (yolov5_ros) StdoutLine: {'line': b'running develop\n'}
+[18.001080] (yolov5_ros) StderrLine: {'line': b'/usr/local/lib/python3.6/dist-packages/setuptools/command/easy_install.py:159: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[18.002308] (yolov5_ros) StderrLine: {'line': b'  EasyInstallDeprecationWarning,\n'}
+[18.011390] (yolov5_ros) StderrLine: {'line': b'/usr/local/lib/python3.6/dist-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[18.012228] (yolov5_ros) StderrLine: {'line': b'  setuptools.SetuptoolsDeprecationWarning,\n'}
+[18.089651] (-) TimerEvent: {}
+[18.099087] (cv_basics) StdoutLine: {'line': b'running develop\n'}
+[18.102843] (cv_basics) StderrLine: {'line': b'/usr/local/lib/python3.6/dist-packages/setuptools/command/easy_install.py:159: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[18.103901] (cv_basics) StderrLine: {'line': b'  EasyInstallDeprecationWarning,\n'}
+[18.110057] (cv_basics) StderrLine: {'line': b'/usr/local/lib/python3.6/dist-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[18.110804] (cv_basics) StderrLine: {'line': b'  setuptools.SetuptoolsDeprecationWarning,\n'}
+[18.189806] (-) TimerEvent: {}
+[18.291830] (-) TimerEvent: {}
+[18.395002] (-) TimerEvent: {}
+[18.497104] (-) TimerEvent: {}
+[18.601465] (-) TimerEvent: {}
+[18.702239] (-) TimerEvent: {}
+[18.804595] (-) TimerEvent: {}
+[18.905820] (-) TimerEvent: {}
+[18.970947] (yolov5_ros) StdoutLine: {'line': b'running egg_info\n'}
+[18.972090] (yolov5_ros) StdoutLine: {'line': b'writing yolov5_ros.egg-info/PKG-INFO\n'}
+[18.974607] (yolov5_ros) StdoutLine: {'line': b'writing dependency_links to yolov5_ros.egg-info/dependency_links.txt\n'}
+[18.976334] (yolov5_ros) StdoutLine: {'line': b'writing entry points to yolov5_ros.egg-info/entry_points.txt\n'}
+[18.978012] (yolov5_ros) StdoutLine: {'line': b'writing requirements to yolov5_ros.egg-info/requires.txt\n'}
+[18.981613] (yolov5_ros) StdoutLine: {'line': b'writing top-level names to yolov5_ros.egg-info/top_level.txt\n'}
+[19.006119] (-) TimerEvent: {}
+[19.010090] (cv_basics) StdoutLine: {'line': b'running egg_info\n'}
+[19.012158] (cv_basics) StdoutLine: {'line': b'writing cv_basics.egg-info/PKG-INFO\n'}
+[19.013736] (cv_basics) StdoutLine: {'line': b'writing dependency_links to cv_basics.egg-info/dependency_links.txt\n'}
+[19.014944] (cv_basics) StdoutLine: {'line': b'writing entry points to cv_basics.egg-info/entry_points.txt\n'}
+[19.016210] (cv_basics) StdoutLine: {'line': b'writing requirements to cv_basics.egg-info/requires.txt\n'}
+[19.017187] (cv_basics) StdoutLine: {'line': b'writing top-level names to cv_basics.egg-info/top_level.txt\n'}
+[19.020579] (yolov5_ros) StdoutLine: {'line': b"reading manifest file 'yolov5_ros.egg-info/SOURCES.txt'\n"}
+[19.033199] (yolov5_ros) StdoutLine: {'line': b"writing manifest file 'yolov5_ros.egg-info/SOURCES.txt'\n"}
+[19.043891] (cv_basics) StdoutLine: {'line': b"reading manifest file 'cv_basics.egg-info/SOURCES.txt'\n"}
+[19.058512] (cv_basics) StdoutLine: {'line': b"writing manifest file 'cv_basics.egg-info/SOURCES.txt'\n"}
+[19.107886] (-) TimerEvent: {}
+[19.211544] (-) TimerEvent: {}
+[19.314334] (-) TimerEvent: {}
+[19.393667] (cv_basics) StdoutLine: {'line': b'running build_ext\n'}
+[19.394416] (cv_basics) StdoutLine: {'line': b'Creating /tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages/cv-basics.egg-link (link to .)\n'}
+[19.395231] (cv_basics) StdoutLine: {'line': b'Installing calibration script to /tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/cv_basics\n'}
+[19.396963] (cv_basics) StdoutLine: {'line': b'Installing filtere_scan script to /tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/cv_basics\n'}
+[19.400235] (cv_basics) StdoutLine: {'line': b'Installing img_publisher script to /tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/cv_basics\n'}
+[19.402097] (cv_basics) StdoutLine: {'line': b'Installing img_subscriber script to /tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/cv_basics\n'}
+[19.402828] (cv_basics) StdoutLine: {'line': b'\n'}
+[19.403443] (cv_basics) StdoutLine: {'line': b'Installed /tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics\n'}
+[19.403993] (cv_basics) StdoutLine: {'line': b'running install_data\n'}
+[19.412571] (yolov5_ros) StdoutLine: {'line': b'running build_ext\n'}
+[19.413438] (yolov5_ros) StdoutLine: {'line': b'Creating /tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages/yolov5-ros.egg-link (link to .)\n'}
+[19.414704] (-) TimerEvent: {}
+[19.415758] (yolov5_ros) StdoutLine: {'line': b'Installing New_trt script to /tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/yolov5_ros\n'}
+[19.420674] (yolov5_ros) StdoutLine: {'line': b'Installing Old_trt script to /tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/yolov5_ros\n'}
+[19.421884] (yolov5_ros) StdoutLine: {'line': b'Installing yolov5_ros script to /tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/yolov5_ros\n'}
+[19.422770] (yolov5_ros) StdoutLine: {'line': b'\n'}
+[19.423562] (yolov5_ros) StdoutLine: {'line': b'Installed /tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros\n'}
+[19.424178] (yolov5_ros) StdoutLine: {'line': b'running install_data\n'}
+[19.514916] (-) TimerEvent: {}
+[19.584491] (cv_basics) CommandEnded: {'returncode': 0}
+[19.620266] (-) TimerEvent: {}
+[19.731273] (-) TimerEvent: {}
+[19.851124] (cv_basics) JobEnded: {'identifier': 'cv_basics', 'rc': 0}
+[19.897716] (-) TimerEvent: {}
+[19.908921] (yolov5_ros) CommandEnded: {'returncode': 0}
+[19.998626] (-) TimerEvent: {}
+[20.106298] (-) TimerEvent: {}
+[20.127632] (yolov5_ros) JobEnded: {'identifier': 'yolov5_ros', 'rc': 0}
+[20.169095] (sllidar_ros2) JobStarted: {'identifier': 'sllidar_ros2'}
+[20.211590] (-) TimerEvent: {}
+[20.307334] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'cmake'}
+[20.311859] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'build'}
+[20.312082] (-) TimerEvent: {}
+[20.313994] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2', '--', '-j4', '-l4'], 'cwd': '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2', 'env': OrderedDict([('PYTHONIOENCODING', 'utf-8'), ('HOSTNAME', 'jetson-nano'), ('LD_LIBRARY_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib:/opt/ros/foxy/install/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/install/lib:/usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib'), ('SHLVL', '1'), ('OLDPWD', '/tmp/.X11-unix'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install:/opt/ros/foxy/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('PKG_CONFIG_PATH', '/opt/ros/foxy/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/foxy/install/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/install/bin:/usr/local/cuda/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('AMENT_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/opt/ros/foxy/install'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2'), ('PYTHONPATH', '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages:/opt/ros/foxy/install/lib/python3.6/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/opt/ros/foxy/install:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics')]), 'shell': False}
+[20.414393] (-) TimerEvent: {}
+[20.494441] (sllidar_ros2) StdoutLine: {'line': b'[ 85%] Built target sllidar_node\n'}
+[20.514596] (-) TimerEvent: {}
+[20.562457] (sllidar_ros2) StdoutLine: {'line': b'[100%] Built target sllidar_client\n'}
+[20.579662] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[20.615133] (-) TimerEvent: {}
+[20.716068] (-) TimerEvent: {}
+[20.751981] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'install'}
+[20.753404] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2'], 'cwd': '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2', 'env': OrderedDict([('PYTHONIOENCODING', 'utf-8'), ('HOSTNAME', 'jetson-nano'), ('LD_LIBRARY_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib:/opt/ros/foxy/install/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/install/lib:/usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib'), ('SHLVL', '1'), ('OLDPWD', '/tmp/.X11-unix'), ('HOME', '/root'), ('ROS_PYTHON_VERSION', '3'), ('COLCON_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install:/opt/ros/foxy/install'), ('ROS_DISTRO', 'foxy'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('NVIDIA_DRIVER_CAPABILITIES', 'all'), ('PKG_CONFIG_PATH', '/opt/ros/foxy/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/foxy/install/lib/pkgconfig'), ('TERM', 'xterm'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/foxy/install/bin:/usr/local/cuda/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_ROOT', '/opt/ros/foxy'), ('XAUTHORITY', '/tmp/.docker.xauth'), ('AMENT_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/opt/ros/foxy/install'), ('DEBIAN_FRONTEND', 'noninteractive'), ('SHELL', '/bin/bash'), ('PWD', '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2'), ('PYTHONPATH', '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages:/opt/ros/foxy/install/lib/python3.6/site-packages'), ('NVIDIA_VISIBLE_DEVICES', 'all'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/opt/ros/foxy/install:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics')]), 'shell': False}
+[20.777754] (sllidar_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[20.779878] (sllidar_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[20.785029] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/New_thesis.launch.py\n'}
+[20.786117] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/Thesis.launch.py\n'}
+[20.791290] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/Trt.launch.py\n'}
+[20.794206] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/__pycache__/sllidar_launch.cpython-36.pyc\n'}
+[20.795676] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a3_launch.py\n'}
+[20.796841] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_launch.py\n'}
+[20.797964] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_launch.py\n'}
+[20.798985] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_tcp_launch.py\n'}
+[20.799964] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2_launch.py\n'}
+[20.800900] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2e_launch.py\n'}
+[20.801861] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_t1_launch.py\n'}
+[20.802843] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a3_launch.py\n'}
+[20.803822] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_launch.py\n'}
+[20.805694] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_launch.py\n'}
+[20.806582] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_tcp_launch.py\n'}
+[20.807561] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2_launch.py\n'}
+[20.808516] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2e_launch.py\n'}
+[20.809539] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_t1_launch.py\n'}
+[20.812493] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz\n'}
+[20.815006] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node\n'}
+[20.815916] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client\n'}
+[20.816641] (-) TimerEvent: {}
+[20.819061] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2\n'}
+[20.820547] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2\n'}
+[20.822091] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh\n'}
+[20.823141] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv\n'}
+[20.825037] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh\n'}
+[20.826138] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv\n'}
+[20.827245] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash\n'}
+[20.828908] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh\n'}
+[20.829852] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh\n'}
+[20.831479] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv\n'}
+[20.836151] (sllidar_ros2) StdoutLine: {'line': b'-- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/package.dsv\n'}
+[20.849075] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2\n'}
+[20.851462] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[20.852667] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[20.853890] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake\n'}
+[20.854744] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake\n'}
+[20.855784] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/package.xml\n'}
+[20.860538] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[20.922037] (-) TimerEvent: {}
+[21.031471] (-) TimerEvent: {}
+[21.132597] (-) TimerEvent: {}
+[21.239514] (-) TimerEvent: {}
+[21.353526] (-) TimerEvent: {}
+[21.431051] (sllidar_ros2) JobEnded: {'identifier': 'sllidar_ros2', 'rc': 0}
+[21.439054] (-) EventReactorShutdown: {}

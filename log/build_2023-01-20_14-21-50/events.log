@@ -1,0 +1,104 @@
+[0.000000] (-) TimerEvent: {}
+[0.000844] (-) JobUnselected: {'identifier': 'bboxes_ex_msgs'}
+[0.006476] (-) JobUnselected: {'identifier': 'cv_basics'}
+[0.006677] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.006817] (-) JobUnselected: {'identifier': 'sllidar_ros2'}
+[0.006955] (yolov5_ros) JobQueued: {'identifier': 'yolov5_ros', 'dependencies': OrderedDict([('bboxes_ex_msgs', '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs')])}
+[0.007106] (yolov5_ros) JobStarted: {'identifier': 'yolov5_ros'}
+[0.096654] (-) TimerEvent: {}
+[0.202924] (-) TimerEvent: {}
+[0.304430] (-) TimerEvent: {}
+[0.405496] (-) TimerEvent: {}
+[0.506203] (-) TimerEvent: {}
+[0.606899] (-) TimerEvent: {}
+[0.707602] (-) TimerEvent: {}
+[0.808342] (-) TimerEvent: {}
+[0.909051] (-) TimerEvent: {}
+[1.012461] (-) TimerEvent: {}
+[1.113390] (-) TimerEvent: {}
+[1.214099] (-) TimerEvent: {}
+[1.314791] (-) TimerEvent: {}
+[1.415487] (-) TimerEvent: {}
+[1.516196] (-) TimerEvent: {}
+[1.617090] (-) TimerEvent: {}
+[1.717924] (-) TimerEvent: {}
+[1.823771] (-) TimerEvent: {}
+[1.925166] (-) TimerEvent: {}
+[2.026620] (-) TimerEvent: {}
+[2.127625] (-) TimerEvent: {}
+[2.228411] (-) TimerEvent: {}
+[2.329185] (-) TimerEvent: {}
+[2.429958] (-) TimerEvent: {}
+[2.530683] (-) TimerEvent: {}
+[2.631426] (-) TimerEvent: {}
+[2.732105] (-) TimerEvent: {}
+[2.832845] (-) TimerEvent: {}
+[2.933983] (-) TimerEvent: {}
+[3.034663] (-) TimerEvent: {}
+[3.135435] (-) TimerEvent: {}
+[3.237925] (-) TimerEvent: {}
+[3.339519] (-) TimerEvent: {}
+[3.440270] (-) TimerEvent: {}
+[3.541025] (-) TimerEvent: {}
+[3.641814] (-) TimerEvent: {}
+[3.742561] (-) TimerEvent: {}
+[3.843309] (-) TimerEvent: {}
+[3.944090] (-) TimerEvent: {}
+[4.044868] (-) TimerEvent: {}
+[4.145715] (-) TimerEvent: {}
+[4.227156] (yolov5_ros) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros/build', '--no-deps', 'install_data'], 'cwd': '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros', 'env': {'PYTHONIOENCODING': 'utf-8', 'HOSTNAME': 'jetson-nano', 'LD_LIBRARY_PATH': '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros/lib:/opt/ros/foxy/install/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/install/lib:/usr/local/cuda/lib64:/usr/local/cuda-10.2/targets/aarch64-linux/lib', 'SHLVL': '1', 'OLDPWD': '/', 'HOME': '/root', 'ROS_PYTHON_VERSION': '3', 'COLCON_PREFIX_PATH': '/tmp/.X11-unix/ROS2_final_Thesis/install:/opt/ros/foxy/install', 'ROS_DISTRO': 'foxy', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'NVIDIA_DRIVER_CAPABILITIES': 'all', 'PKG_CONFIG_PATH': '/opt/ros/foxy/install/lib/aarch64-linux-gnu/pkgconfig:/opt/ros/foxy/install/lib/pkgconfig', 'TERM': 'xterm', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/foxy/install/bin:/usr/local/cuda/bin:/usr/local/cuda-10.2/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'ROS_ROOT': '/opt/ros/foxy', 'XAUTHORITY': '/tmp/.docker.xauth', 'AMENT_PREFIX_PATH': '/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/opt/ros/foxy/install', 'DEBIAN_FRONTEND': 'noninteractive', 'SHELL': '/bin/bash', 'PWD': '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros', 'PYTHONPATH': '/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros/prefix_override:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros:/tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages:/tmp/.X11-unix/ROS2_final_Thesis/build/cv_basics:/tmp/.X11-unix/ROS2_final_Thesis/install/cv_basics/lib/python3.6/site-packages:/opt/ros/foxy/install/lib/python3.6/site-packages', 'NVIDIA_VISIBLE_DEVICES': 'all', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/tmp/.X11-unix/ROS2_final_Thesis/install/bboxes_ex_msgs:/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2:/tmp/.X11-unix/ROS2_final_Thesis/install/rplidar_ros:/opt/ros/foxy/install'}, 'shell': False}
+[4.245890] (-) TimerEvent: {}
+[4.346789] (-) TimerEvent: {}
+[4.447538] (-) TimerEvent: {}
+[4.548314] (-) TimerEvent: {}
+[4.649052] (-) TimerEvent: {}
+[4.749987] (-) TimerEvent: {}
+[4.850689] (-) TimerEvent: {}
+[4.951392] (-) TimerEvent: {}
+[5.052133] (-) TimerEvent: {}
+[5.152886] (-) TimerEvent: {}
+[5.253671] (-) TimerEvent: {}
+[5.354362] (-) TimerEvent: {}
+[5.455118] (-) TimerEvent: {}
+[5.555903] (-) TimerEvent: {}
+[5.560647] (yolov5_ros) StderrLine: {'line': b"/usr/local/lib/python3.6/dist-packages/setuptools/dist.py:726: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[5.561517] (yolov5_ros) StderrLine: {'line': b'  % (opt, underscore_opt)\n'}
+[5.656121] (-) TimerEvent: {}
+[5.756897] (-) TimerEvent: {}
+[5.760101] (yolov5_ros) StdoutLine: {'line': b'running develop\n'}
+[5.761551] (yolov5_ros) StderrLine: {'line': b'/usr/local/lib/python3.6/dist-packages/setuptools/command/easy_install.py:159: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.\n'}
+[5.762152] (yolov5_ros) StderrLine: {'line': b'  EasyInstallDeprecationWarning,\n'}
+[5.767533] (yolov5_ros) StderrLine: {'line': b'/usr/local/lib/python3.6/dist-packages/setuptools/command/install.py:37: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[5.768204] (yolov5_ros) StderrLine: {'line': b'  setuptools.SetuptoolsDeprecationWarning,\n'}
+[5.857120] (-) TimerEvent: {}
+[5.957881] (-) TimerEvent: {}
+[6.058623] (-) TimerEvent: {}
+[6.159388] (-) TimerEvent: {}
+[6.260121] (-) TimerEvent: {}
+[6.360955] (-) TimerEvent: {}
+[6.450796] (yolov5_ros) StdoutLine: {'line': b'running egg_info\n'}
+[6.452836] (yolov5_ros) StdoutLine: {'line': b'writing yolov5_ros.egg-info/PKG-INFO\n'}
+[6.453940] (yolov5_ros) StdoutLine: {'line': b'writing dependency_links to yolov5_ros.egg-info/dependency_links.txt\n'}
+[6.454499] (yolov5_ros) StdoutLine: {'line': b'writing entry points to yolov5_ros.egg-info/entry_points.txt\n'}
+[6.454963] (yolov5_ros) StdoutLine: {'line': b'writing requirements to yolov5_ros.egg-info/requires.txt\n'}
+[6.455462] (yolov5_ros) StdoutLine: {'line': b'writing top-level names to yolov5_ros.egg-info/top_level.txt\n'}
+[6.461080] (-) TimerEvent: {}
+[6.467677] (yolov5_ros) StdoutLine: {'line': b"reading manifest file 'yolov5_ros.egg-info/SOURCES.txt'\n"}
+[6.472793] (yolov5_ros) StdoutLine: {'line': b"writing manifest file 'yolov5_ros.egg-info/SOURCES.txt'\n"}
+[6.561261] (-) TimerEvent: {}
+[6.662029] (-) TimerEvent: {}
+[6.689602] (yolov5_ros) StdoutLine: {'line': b'running build_ext\n'}
+[6.690680] (yolov5_ros) StdoutLine: {'line': b'Creating /tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/python3.6/site-packages/yolov5-ros.egg-link (link to .)\n'}
+[6.695478] (yolov5_ros) StdoutLine: {'line': b'Installing New_trt script to /tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/yolov5_ros\n'}
+[6.696543] (yolov5_ros) StdoutLine: {'line': b'Installing Old_trt script to /tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/yolov5_ros\n'}
+[6.697426] (yolov5_ros) StdoutLine: {'line': b'Installing yolov5_ros script to /tmp/.X11-unix/ROS2_final_Thesis/install/yolov5_ros/lib/yolov5_ros\n'}
+[6.698222] (yolov5_ros) StdoutLine: {'line': b'\n'}
+[6.698775] (yolov5_ros) StdoutLine: {'line': b'Installed /tmp/.X11-unix/ROS2_final_Thesis/build/yolov5_ros\n'}
+[6.699328] (yolov5_ros) StdoutLine: {'line': b'running install_data\n'}
+[6.762303] (-) TimerEvent: {}
+[6.846917] (yolov5_ros) CommandEnded: {'returncode': 0}
+[6.867519] (-) TimerEvent: {}
+[6.988570] (-) TimerEvent: {}
+[7.089933] (yolov5_ros) JobEnded: {'identifier': 'yolov5_ros', 'rc': 0}
+[7.093872] (-) TimerEvent: {}
+[7.094316] (-) EventReactorShutdown: {}

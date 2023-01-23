@@ -26,7 +26,7 @@ class ImageSubscriber(Node):
     # from the video_frames topic. The queue size is 10 messages.
     self.subscription = self.create_subscription(
       Image, 
-      'yolov5/image_raw',    #video_frames
+      'trt_image',    #video_frames
       self.listener_callback, 
       100)
     self.subscription # prevent unused variable warning
@@ -45,12 +45,12 @@ class ImageSubscriber(Node):
     current_frame = self.br.imgmsg_to_cv2(data) 
     #print(data)
     # Display image
-    model_path = '/home/eit-lab/ros2_karan_ws/yolov5/best.pt'
-    model = torch.hub.load('/home/eit-lab/ros2_karan_ws/yolov5', 'custom', path=model_path, force_reload=True)
-    new_frame = model(current_frame)
+    #model_path = '/home/eit-lab/ros2_karan_ws/yolov5/best.pt'
+    #model = torch.hub.load('/home/eit-lab/ros2_karan_ws/yolov5', 'custom', path=model_path, force_reload=True)
+    #new_frame = model(current_frame)
     #cv2.imshow("camera", current_frame)
     #new_frame.show()
-    cv2.imshow("yolo",new_frame.show())
+    cv2.imshow("yolo",current_frame)
     cv2.waitKey(1)
   
 def main(args=None):

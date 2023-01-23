@@ -18,26 +18,15 @@ class MinimalSubscriber(Node):
     def __init__(self):
         global filterScan 
         super().__init__('minimal_subscriber')
-        self.subscription = self.create_subscription(
-            LaserScan,
-            '/scan',
-            self.callback_scan,
-            50)
+        self.subscription = self.create_subscription(LaserScan,'/scan',self.callback_scan,10)
+
         self.subscription  # prevent unused variable warning
-        self.subscription2 = self.create_subscription(
-            Image,
-            'yolov5/image_raw',
-            self.callback_scan2,
-            50)
+        self.subscription2 = self.create_subscription(Image,'trt_image',self.callback_scan2,10)
         self.subscription2  # prevent unused variable warning
-        self.subscription3 = self.create_subscription(
-            BoundingBoxes,
-            'yolov5/bounding_boxes',
-            self.callback_scan3,
-            50)
-        self.subscription3  # prevent unused variable warning
+        #self.subscription3 = self.create_subscription(BoundingBoxes,'yolov5/bounding_boxes',self.callback_scan3,50)
+        #self.subscription3  # prevent unused variable warning
         self.publisher_ = self.create_publisher(LaserScan, '/filtere_data', 50)
-        self.br = CvBridge()
+        #self.br = CvBridge()
     def callback_scan(self, data):
         global ranges_filter, intensities_filter, filterScan
 
@@ -47,10 +36,10 @@ class MinimalSubscriber(Node):
         ranges_filter = copy.copy(data.ranges)
         intensities_filter = copy.copy(data.intensities)
 
-    #convert them to list
+        #convert them to list
         ranges_filter = list(ranges_filter)
         intensities_filter = list(intensities_filter)
-        global min1 
+        '''global min1 
         min1 = ranges_filter[30] 
         for i in range(-30,30):    
             #Compare elements of array with min    
@@ -58,16 +47,20 @@ class MinimalSubscriber(Node):
                 min1 = ranges_filter[360+i]
                 global min_inst 
                 min_inst= intensities_filter[360+i]
-     #filtering those angles that I do not want them (based on the question)
-        for x in range(0, 360):
+        #filtering those angles that I do not want them (based on the question)'''
+        '''for x in range(0, 360):
             if x != min1:
                 ranges_filter[x] = 0
                 intensities_filter[x] = 0
                 data.ranges[x] = 0
                 data.intensities[x] = 0
             else:
-                continue
-        
+                continue'''
+        for x in range(25,346):
+            range_filter[x]=0
+            intensities_filter[x] = 0
+            data.ranges[x] = 0
+            data.intensities[x] = 0
         self.publisher_.publish(data)
         
         #self.get_logger().info('I ranges: "%s"' % filterScan)
@@ -78,9 +71,22 @@ class MinimalSubscriber(Node):
         cv2.imshow("camera", current_frame)
         cv2.waitKey(1)
     def callback_scan3(self, data):
+        box = copy.copy(data.bounding_boxes)
+        if box:
+            x_dis_min = box[0].xmin
+            x_dis_max = box[0].xmax
+            x_cent = ((x_dis_max-x_dis_min)/2)+ x_dis_min
+            if x_cent < middle_point:
+                dept = ranges_filter[int(x_cent*conversion_factor)]
+            else:
+                dept = ranges_filter[int((x_cent*conversion_factor)-385)]
+            self.get_logger().info('dept: "%s"' % dept)
+            self.get_logger().info('image coordinate: "%s"' % x_cent)
+
+
         #self.get_logger().info('bounding data: "%s"' % data)
-        self.get_logger().info('min point: "%s"' % min1)
-        self.get_logger().info('min intensity: "%s"' % min_inst)
+        #self.get_logger().info('min point: "%s"' % min1)
+        #self.get_logger().info('min intensity: "%s"' % min_inst)
 
 def main(args=None):
     rclpy.init(args=args)

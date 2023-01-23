@@ -29,6 +29,9 @@ setup(
     entry_points={
         'console_scripts': [
             'yolov5_ros = '+package_name+'.main:ros_main',
+            'New_trt = yolov5_ros.trtnode:main',
+            'Old_trt = yolov5_ros.trtnode_old:main',
+            
         ],
     },
 )

@@ -1,0 +1,371 @@
+[0.153s] Invoking command in '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2': /usr/bin/cmake /tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2
+[0.848s] -- The C compiler identification is GNU 7.5.0
+[1.299s] -- The CXX compiler identification is GNU 7.5.0
+[1.342s] -- Detecting C compiler ABI info
+[1.559s] -- Detecting C compiler ABI info - done
+[1.609s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.611s] -- Detecting C compile features
+[1.613s] -- Detecting C compile features - done
+[1.629s] -- Detecting CXX compiler ABI info
+[1.870s] -- Detecting CXX compiler ABI info - done
+[1.909s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.910s] -- Detecting CXX compile features
+[1.912s] -- Detecting CXX compile features - done
+[1.955s] -- Found ament_cmake: 0.9.11 (/opt/ros/foxy/install/share/ament_cmake/cmake)
+[2.122s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.9", minimum required is "3") 
+[2.122s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.300s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.555s] -- Found rclcpp: 2.4.2 (/opt/ros/foxy/install/share/rclcpp/cmake)
+[3.813s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.851s] -- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/install/share/rosidl_adapter/cmake)
+[4.131s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1")  
+[4.226s] -- Found FastRTPS: /opt/ros/foxy/install/include  
+[4.581s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.866s] -- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/install/share/rmw_implementation_cmake/cmake)
+[4.874s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[4.880s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.127s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[5.128s] -- Looking for pthread_create in pthreads
+[5.302s] -- Looking for pthread_create in pthreads - not found
+[5.303s] -- Looking for pthread_create in pthread
+[5.517s] -- Looking for pthread_create in pthread - found
+[5.522s] -- Found Threads: TRUE  
+[6.194s] -- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/install/share/sensor_msgs/cmake)
+[6.663s] -- Found std_srvs: 2.0.5 (/opt/ros/foxy/install/share/std_srvs/cmake)
+[7.269s] -- Configuring done
+[7.336s] -- Generating done
+[7.343s] -- Build files have been written to: /tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2
+[7.379s] Invoked command in '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2' returned '0': /usr/bin/cmake /tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2
+[7.391s] Invoking command in '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2': /usr/bin/cmake --build /tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2 -- -j4 -l4
+[7.497s] [ 14%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_serial.cpp.o[0m
+[7.498s] [ 14%] [32mBuilding CXX object CMakeFiles/sllidar_client.dir/src/sllidar_client.cpp.o[0m
+[7.508s] [ 21%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/net_socket.cpp.o[0m
+[7.519s] [ 28%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/src/sllidar_node.cpp.o[0m
+[7.921s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/src/sdkcommon.h:47:0[m[K,
+[7.922s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[7.923s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/src/hal/assert.h:1:1:[m[K [01;35m[Kwarning: [m[Knull character(s) ignored
+[7.923s]  [01;35m[K [m[K                                                                                                                                                                                                                                                                                                                        
+[7.924s]  [01;35m[K^[m[K
+[9.569s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kbool rp::arch::net::raw_serial::open(const char*, uint32_t, uint32_t)[m[K’:
+[9.570s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:97:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[9.571s]  bool raw_serial::open(const char * portname, uint32_t baudrate, uint32_t [01;35m[Kflags[m[K)
+[9.572s]                                                                           [01;35m[K^~~~~[m[K
+[9.575s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual void rp::arch::net::raw_serial::flush(_u32)[m[K’:
+[9.576s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:281:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[9.577s]  void raw_serial::flush( _u32 [01;35m[Kflags[m[K)
+[9.589s]                               [01;35m[K^~~~~[m[K
+[9.591s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::waitforsent(_u32, size_t*)[m[K’:
+[9.592s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:286:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[9.593s]  int raw_serial::waitforsent(_u32 [01;35m[Ktimeout[m[K, size_t * returned_size)
+[9.594s]                                   [01;35m[K^~~~~~~[m[K
+[9.595s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::waitforrecv(_u32, size_t*)[m[K’:
+[9.596s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_serial.cpp:292:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[9.597s]  int raw_serial::waitforrecv(_u32 [01;35m[Ktimeout[m[K, size_t * returned_size)
+[9.598s]                                   [01;35m[K^~~~~~~[m[K
+[9.628s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36:0[m[K,
+[9.629s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[9.630s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[9.630s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[9.631s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:17:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[9.632s]      sl_u8 data[0[01;35m[K][m[K;
+[9.632s]                  [01;35m[K^[m[K
+[9.633s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36:0[m[K,
+[9.634s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[9.635s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[9.636s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[9.637s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[9.637s]      sl_u8  payload[0[01;35m[K][m[K;
+[9.647s]                      [01;35m[K^[m[K
+[10.059s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::net::SocketAddress::getAddressAsString(char*, size_t) const[m[K’:
+[10.059s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:170:17:[m[K [01;35m[Kwarning: [m[Kordered comparison of pointer with integer zero [[01;35m[K-Wextra[m[K]
+[10.060s]      return ans<=[01;35m[K0[m[K?RESULT_OPERATION_FAIL:RESULT_OK;
+[10.061s]                  [01;35m[K^[m[K
+[10.118s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::arch::net::StreamSocketImpl::send(const void*, size_t)[m[K’:
+[10.119s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:438:17:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[10.120s]          if ([01;35m[Kans == (int)len[m[K) {
+[10.121s]              [01;35m[K~~~~^~~~~~~~~~~[m[K
+[10.164s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/src/arch/linux/arch_linux.h:42:0[m[K,
+[10.165s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/src/sdkcommon.h:41[m[K,
+[10.165s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[10.166s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::arch::net::DGramSocketImpl::sendTo(const rp::net::SocketAddress&, const void*, size_t)[m[K’:
+[10.167s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:726:24:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[10.167s]              assert([01;35m[Kans == (int)l[m[Ken);
+[10.168s]                     [01;35m[K~~~~^~~~~~~~~[m[K
+[10.417s] [ 35%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/arch/linux/timer.cpp.o[0m
+[10.540s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/arch/linux/net_socket.cpp:722:47:[m[K [01;35m[Kwarning: [m[Knonnull argument ‘[01m[Ktarget[m[K’ compared to NULL [[01;35m[K-Wnonnull-compare[m[K]
+[10.541s]          const struct sockaddr* addr = &target [01;35m[K?[m[K reinterpret_cast<const struct sockaddr*>(target.getPlatformData()) : NULL;
+[10.541s]                                                [01;35m[K^[m[K
+[11.710s] [ 42%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/hal/thread.cpp.o[0m
+[12.401s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/src/sdkcommon.h:47:0[m[K,
+[12.402s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/hal/thread.cpp:35[m[K:
+[12.403s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/src/hal/assert.h:1:1:[m[K [01;35m[Kwarning: [m[Knull character(s) ignored
+[12.403s]  [01;35m[K [m[K                                                                                                                                                                                                                                                                                                                        
+[12.404s]  [01;35m[K^[m[K
+[13.521s] [ 50%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/rplidar_driver.cpp.o[0m
+[14.092s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sdkcommon.h:47:0[m[K,
+[14.093s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:33[m[K:
+[14.094s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/hal/assert.h:1:1:[m[K [01;35m[Kwarning: [m[Knull character(s) ignored
+[14.095s]  [01;35m[K [m[K                                                                                                                                                                                                                                                                                                                        
+[14.096s]  [01;35m[K^[m[K
+[14.142s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36:0[m[K,
+[14.143s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[14.144s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[14.145s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/hal/thread.cpp:35[m[K:
+[14.146s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:17:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[14.147s]      sl_u8 data[0[01;35m[K][m[K;
+[14.148s]                  [01;35m[K^[m[K
+[14.151s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36:0[m[K,
+[14.151s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[14.154s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/src/sdkcommon.h:49[m[K,
+[14.154s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/hal/thread.cpp:35[m[K:
+[14.155s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[14.156s]      sl_u8  payload[0[01;35m[K][m[K;
+[14.156s]                      [01;35m[K^[m[K
+[14.174s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:37:0[m[K:
+[14.175s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/hal/assert.h:1:1:[m[K [01;35m[Kwarning: [m[Knull character(s) ignored
+[14.176s]  [01;35m[K [m[K                                                                                                                                                                                                                                                                                                                        
+[14.177s]  [01;35m[K^[m[K
+[14.525s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/hal/thread.cpp:43:0[m[K:
+[14.526s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:[m[K In member function ‘[01m[Ku_result rp::hal::Thread::join(long unsigned int)[m[K’:
+[14.526s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/src/arch/linux/thread.hpp:129:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[14.527s]  u_result Thread::join(unsigned long [01;35m[Ktimeout[m[K)
+[14.528s]                                      [01;35m[K^~~~~~~[m[K
+[15.042s] [ 57%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_crc.cpp.o[0m
+[15.158s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:36:0[m[K,
+[15.159s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_crc.h:36[m[K,
+[15.160s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_crc.cpp:33[m[K:
+[15.161s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:17:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[15.165s]      sl_u8 data[0[01;35m[K][m[K;
+[15.167s]                  [01;35m[K^[m[K
+[15.173s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_crc.h:36:0[m[K,
+[15.174s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_crc.cpp:33[m[K:
+[15.175s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[15.176s]      sl_u8  payload[0[01;35m[K][m[K;
+[15.177s]                      [01;35m[K^[m[K
+[15.185s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_crc.cpp:[m[K In function ‘[01m[Ksl_u32 sl::crc32::cal(sl_u32, void*, sl_u16)[m[K’:
+[15.187s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_crc.cpp:77:29:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K-[m[K’ in operand of ‘[01m[K&[m[K’ [[01;35m[K-Wparentheses[m[K]
+[15.188s]          sl_u8 leftBytes = [01;35m[K4 - len[m[K & 0x3;
+[15.190s]                            [01;35m[K~~^~~~~[m[K
+[15.326s] [ 64%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_lidar_driver.cpp.o[0m
+[15.729s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sdkcommon.h:47:0[m[K,
+[15.733s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:33[m[K:
+[15.734s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/hal/assert.h:1:1:[m[K [01;35m[Kwarning: [m[Knull character(s) ignored
+[15.735s]  [01;35m[K [m[K                                                                                                                                                                                                                                                                                                                        
+[15.736s]  [01;35m[K^[m[K
+[15.798s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:37:0[m[K:
+[15.799s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/hal/assert.h:1:1:[m[K [01;35m[Kwarning: [m[Knull character(s) ignored
+[15.800s]  [01;35m[K [m[K                                                                                                                                                                                                                                                                                                                        
+[15.801s]  [01;35m[K^[m[K
+[16.109s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36:0[m[K,
+[16.110s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[16.111s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[16.111s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:33[m[K:
+[16.112s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:17:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[16.112s]      sl_u8 data[0[01;35m[K][m[K;
+[16.113s]                  [01;35m[K^[m[K
+[16.119s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36:0[m[K,
+[16.120s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[16.121s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[16.122s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:33[m[K:
+[16.122s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[16.123s]      sl_u8  payload[0[01;35m[K][m[K;
+[16.124s]                      [01;35m[K^[m[K
+[16.746s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::connect(const char*, _u32, _u32)[m[K’:
+[16.747s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:67:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[16.748s]      u_result RPlidarDriver::connect(const char *path, _u32 portOrBaud, _u32 [01;35m[Kflag[m[K)
+[16.748s]                                                                              [01;35m[K^~~~[m[K
+[16.749s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::reset(_u32)[m[K’:
+[16.750s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:101:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[16.750s]      u_result RPlidarDriver::reset(_u32 [01;35m[Ktimeout[m[K)
+[16.751s]                                         [01;35m[K^~~~~~~[m[K
+[16.754s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::getScanDataWithInterval(rplidar_response_measurement_node_t*, size_t&)[m[K’:
+[16.755s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:175:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knodebuffer[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[16.756s]      u_result RPlidarDriver::getScanDataWithInterval(rplidar_response_measurement_node_t * [01;35m[Knodebuffer[m[K, size_t & count)
+[16.759s]                                                                                            [01;35m[K^~~~~~~~~~[m[K
+[16.760s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/rplidar_driver.cpp:175:112:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcount[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[16.777s]      u_result RPlidarDriver::getScanDataWithInterval(rplidar_response_measurement_node_t * nodebuffer, size_t & [01;35m[Kcount[m[K)
+[16.790s]                                                                                                                 [01;35m[K^~~~~[m[K
+[17.377s] [ 71%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_serial_channel.cpp.o[0m
+[17.486s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp:33:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+[17.487s]  #pragma [01;35m[Konce[m[K
+[17.488s]          [01;35m[K^~~~[m[K
+[17.566s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar_protocol.h:36:0[m[K,
+[17.567s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar.h:39[m[K,
+[17.568s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[17.568s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:33[m[K:
+[17.569s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:17:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[17.570s]      sl_u8 data[0[01;35m[K][m[K;
+[17.570s]                  [01;35m[K^[m[K
+[17.571s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar_cmd.h:36:0[m[K,
+[17.572s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/rplidar.h:40[m[K,
+[17.572s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sdkcommon.h:49[m[K,
+[17.573s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:33[m[K:
+[17.574s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[17.574s]      sl_u8  payload[0[01;35m[K][m[K;
+[17.575s]                      [01;35m[K^[m[K
+[18.258s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::reset(sl_u32)[m[K’:
+[18.259s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:273:46:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[18.260s]          sl_result reset(sl_u32 timeoutInMs = [01;35m[KDEFAULT_TIMEOUT[m[K)
+[18.260s]                                               [01;35m[K^~~~~~~~~~~~~~~[m[K
+[18.283s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getAllSupportedScanModes(std::vector<sl::LidarScanMode>&, sl_u32)[m[K’:
+[18.284s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:286:103:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[18.285s]          sl_result getAllSupportedScanModes(std::vector<LidarScanMode>& outModes, sl_u32 timeoutInMs = [01;35m[KDEFAULT_TIMEOUT[m[K)
+[18.285s]                                                                                                        [01;35m[K^~~~~~~~~~~~~~~[m[K
+[18.298s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::startScan(bool, bool, sl_u32, sl::LidarScanMode*)[m[K’:
+[18.299s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:347:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Koptions[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[18.300s]          sl_result startScan(bool force, bool useTypicalScan, sl_u32 options = [01;35m[K0[m[K, LidarScanMode* outUsedScanMode = nullptr)
+[18.301s]                                                                                [01;35m[K^[m[K
+[18.305s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::stop(sl_u32)[m[K’:
+[18.305s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:534:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[18.306s]          sl_result stop(sl_u32 timeout = [01;35m[KDEFAULT_TIMEOUT[m[K)
+[18.307s]                                          [01;35m[K^~~~~~~~~~~~~~~[m[K
+[18.326s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getDeviceInfo(sl_lidar_response_device_info_t&, sl_u32)[m[K’:
+[18.326s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:579:89:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[18.327s]          sl_result getDeviceInfo(sl_lidar_response_device_info_t& info, sl_u32 timeout = [01;35m[KDEFAULT_TIMEOUT[m[K)
+[18.328s]                                                                                          [01;35m[K^~~~~~~~~~~~~~~[m[K
+[18.332s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::checkMotorCtrlSupport(sl::MotorCtrlSupport&, sl_u32)[m[K’:
+[18.333s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:592:86:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[18.333s]          sl_result checkMotorCtrlSupport(MotorCtrlSupport & support, sl_u32 timeout = [01;35m[KDEFAULT_TIMEOUT[m[K)
+[18.334s]                                                                                       [01;35m[K^~~~~~~~~~~~~~~[m[K
+[18.335s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getFrequency(const sl::LidarScanMode&, const sl_lidar_response_measurement_node_hq_t*, size_t, float&)[m[K’:
+[18.335s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:627:110:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knodes[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[18.336s]          sl_result getFrequency(const LidarScanMode& scanMode, const sl_lidar_response_measurement_node_hq_t* [01;35m[Knodes[m[K, size_t count, float& frequency)
+[18.336s]                                                                                                               [01;35m[K^~~~~[m[K
+[18.341s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getHealth(sl_lidar_response_device_health_t&, sl_u32)[m[K’:
+[18.342s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:640:89:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[18.343s]          sl_result getHealth(sl_lidar_response_device_health_t& health, sl_u32 timeout = [01;35m[KDEFAULT_TIMEOUT[m[K)
+[18.343s]                                                                                          [01;35m[K^~~~~~~~~~~~~~~[m[K
+[18.354s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getMotorInfo(sl::LidarMotorInfo&, sl_u32)[m[K’:
+[18.354s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:730:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[18.355s]          sl_result getMotorInfo(LidarMotorInfo &motorInfo, sl_u32 [01;35m[KtimeoutInMs[m[K)
+[18.356s]                                                                   [01;35m[K^~~~~~~~~~~[m[K
+[18.385s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Ksl_result sl::SlamtecLidarDriver::_sendCommand(sl_u16, const void*, size_t)[m[K’:
+[18.385s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1089:35:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[18.386s]              for (int pos = 0; [01;35m[Kpos < cmd_packet.size()[m[K; pos++) {
+[18.386s]                                [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[18.387s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1058:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpkt_header[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[18.388s]              sl_u8 [01;35m[Kpkt_header[m[K[10];
+[18.388s]                    [01;35m[K^~~~~~~~~~[m[K
+[18.428s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvoid sl::SlamtecLidarDriver::_ultraCapsuleToNormal(const sl_lidar_response_ultra_capsule_measurement_nodes_t&, sl_lidar_response_measurement_node_hq_t*, size_t&)[m[K’:
+[18.429s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1370:40:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[18.430s]                      if (([01;35m[Kdist_predict1 == 0xFFFFFE00[m[K) || (dist_predict1 == 0x1FF)) {
+[18.430s]                           [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[18.431s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:1379:40:[m[K [01;35m[Kwarning: [m[Kcomparison between signed and unsigned integer expressions [[01;35m[K-Wsign-compare[m[K]
+[18.431s]                      if (([01;35m[Kdist_predict2 == 0xFFFFFE00[m[K) || (dist_predict2 == 0x1FF)) {
+[18.432s]                           [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[19.202s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:[m[K At global scope:
+[19.202s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:72:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::convert(const sl_lidar_response_measurement_node_hq_t&, sl_lidar_response_measurement_node_t&)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[19.203s]      static void [01;35m[Kconvert[m[K(const sl_lidar_response_measurement_node_hq_t& from, sl_lidar_response_measurement_node_t& to)
+[19.206s]                  [01;35m[K^~~~~~~[m[K
+[19.207s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:36:0[m[K,
+[19.207s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[19.208s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp:34[m[K:
+[19.209s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:17:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[19.209s]      sl_u8 data[0[01;35m[K][m[K;
+[19.210s]                  [01;35m[K^[m[K
+[19.210s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54:0[m[K,
+[19.211s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_serial_channel.cpp:34[m[K:
+[19.212s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[19.212s]      sl_u8  payload[0[01;35m[K][m[K;
+[19.221s]                      [01;35m[K^[m[K
+[19.222s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_lidar_driver.cpp:59:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::printDeprecationWarn(const char*, const char*)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[19.222s]      static void [01;35m[KprintDeprecationWarn[m[K(const char* fn, const char* replacement)
+[19.223s]                  [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[19.754s] [ 78%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_tcp_channel.cpp.o[0m
+[19.846s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:33:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+[19.846s]  #pragma [01;35m[Konce[m[K
+[19.847s]          [01;35m[K^~~~[m[K
+[21.481s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:36:0[m[K,
+[21.482s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[21.483s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:34[m[K:
+[21.483s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:17:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[21.484s]      sl_u8 data[0[01;35m[K][m[K;
+[21.485s]                  [01;35m[K^[m[K
+[21.485s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54:0[m[K,
+[21.486s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:34[m[K:
+[21.487s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[21.487s]      sl_u8  payload[0[01;35m[K][m[K;
+[21.488s]                      [01;35m[K^[m[K
+[21.509s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:[m[K In member function ‘[01m[Kvoid sl::TcpChannel::setStatus(_u32)[m[K’:
+[21.510s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_tcp_channel.cpp:95:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[21.511s]          void setStatus(_u32 [01;35m[Kflag[m[K){}
+[21.511s]                              [01;35m[K^~~~[m[K
+[21.723s] [ 85%] [32mBuilding CXX object CMakeFiles/sllidar_node.dir/sdk/src/sl_udp_channel.cpp.o[0m
+[21.849s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:33:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+[21.850s]  #pragma [01;35m[Konce[m[K
+[21.850s]          [01;35m[K^~~~[m[K
+[21.957s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:36:0[m[K,
+[21.958s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[21.959s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar.h:36[m[K,
+[21.959s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/src/sllidar_node.cpp:38[m[K:
+[21.960s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:17:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[21.961s]      sl_u8 data[0[01;35m[K][m[K;
+[21.962s]                  [01;35m[K^[m[K
+[21.962s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54:0[m[K,
+[21.963s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar.h:36[m[K,
+[21.963s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/src/sllidar_node.cpp:38[m[K:
+[21.964s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[21.965s]      sl_u8  payload[0[01;35m[K][m[K;
+[21.965s]                      [01;35m[K^[m[K
+[23.225s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:36:0[m[K,
+[23.226s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[23.227s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:34[m[K:
+[23.228s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_protocol.h:58:17:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[23.228s]      sl_u8 data[0[01;35m[K][m[K;
+[23.229s]                  [01;35m[K^[m[K
+[23.230s] In file included from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_driver.h:54:0[m[K,
+[23.231s]                  from [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:34[m[K:
+[23.231s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/./sdk/include/sl_lidar_cmd.h:295:21:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[23.232s]      sl_u8  payload[0[01;35m[K][m[K;
+[23.232s]                      [01;35m[K^[m[K
+[23.248s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:[m[K In member function ‘[01m[Kvoid sl::UdpChannel::setStatus(_u32)[m[K’:
+[23.249s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/sdk/src/sl_udp_channel.cpp:103:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[23.250s]          void setStatus(_u32 [01;35m[Kflag[m[K){}
+[23.251s]                              [01;35m[K^~~~[m[K
+[28.065s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/src/sllidar_node.cpp:[m[K In member function ‘[01m[Kbool SLlidarNode::checkSLLIDARHealth(sl::ILidarDriver*)[m[K’:
+[28.065s] [01m[K/tmp/.X11-unix/ROS2_final_Thesis/src/sllidar_ros2/src/sllidar_node.cpp:147:5:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+[28.066s]      [01;35m[K}[m[K
+[28.067s]      [01;35m[K^[m[K
+[33.881s] [ 92%] [32m[1mLinking CXX executable sllidar_node[0m
+[35.124s] [ 92%] Built target sllidar_node
+[39.919s] [100%] [32m[1mLinking CXX executable sllidar_client[0m
+[41.048s] [100%] Built target sllidar_client
+[44.587s] Invoked command in '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2' returned '0': /usr/bin/cmake --build /tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2 -- -j4 -l4
+[44.836s] Invoking command in '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2': /usr/bin/cmake --install /tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2
+[44.859s] -- Install configuration: ""
+[44.861s] -- Execute custom install script
+[44.865s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a3_launch.py
+[44.879s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_launch.py
+[44.892s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_launch.py
+[44.906s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s1_tcp_launch.py
+[44.924s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2_launch.py
+[44.938s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_s2e_launch.py
+[44.958s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_t1_launch.py
+[44.972s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_a3_launch.py
+[44.985s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_launch.py
+[44.999s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_launch.py
+[45.013s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s1_tcp_launch.py
+[45.029s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2_launch.py
+[45.049s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_s2e_launch.py
+[45.063s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/launch/view_sllidar_t1_launch.py
+[45.078s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz
+[45.094s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node
+[45.107s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client
+[45.124s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2
+[45.139s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2
+[45.159s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh
+[45.174s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv
+[45.188s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh
+[45.202s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv
+[45.218s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash
+[45.232s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh
+[45.254s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh
+[45.268s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv
+[45.282s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/package.dsv
+[45.297s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2
+[45.311s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[45.329s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+[45.342s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake
+[45.360s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake
+[45.373s] -- Symlinking: /tmp/.X11-unix/ROS2_final_Thesis/install/sllidar_ros2/share/sllidar_ros2/package.xml
+[45.398s] Invoked command in '/tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2' returned '0': /usr/bin/cmake --install /tmp/.X11-unix/ROS2_final_Thesis/build/sllidar_ros2
